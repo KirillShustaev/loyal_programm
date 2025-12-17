@@ -1,0 +1,9 @@
+body {
+background-color: red;
+}
+h1 {
+    display: grid;
+    grid-template-columns: auto;
+    color: white;
+    background: greenyellow;
+}
