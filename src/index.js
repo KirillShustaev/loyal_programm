@@ -1,11 +1,36 @@
 import './styles/index.css';
 
-const numbers = [2, 3, 5];
+let progChoiceBtn = document.querySelectorAll(".prog__choiceBtn")
+let progCompList = document.querySelectorAll('.prog__item')
 
-// Стрелочная функция. Не запнётся ли на ней Internet Explorer?
-const doubledNumbers = numbers.map(number => number * 2);
+function progChoice() {
+    progChoiceBtn.forEach(e => {
+    let targetBlock = e.getAttribute('data-target')
 
-console.log(doubledNumbers); // 4, 6, 10
+    e.addEventListener("click", ()=> {
+        progCompList.forEach(block => {
+            if (block.classList.contains(targetBlock)){
+                block.classList.add("visible");
+                block.classList.remove("none");
+            } else {
+                block.classList.remove("visible");
+                block.classList.add("none");
+            }
+            if(targetBlock === "all") {
+                block.classList.add("visible");
+                block.classList.remove("none");
+            }
+        })
 
-import mainDev from './index2.js';
-console.log(mainDev)
+
+
+        for(let elem of progChoiceBtn) {
+            elem.classList.remove("active")
+        }
+        e.classList.add("active")
+    })
+
+})
+}
+
+progChoice()

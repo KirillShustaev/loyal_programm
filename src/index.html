@@ -2,10 +2,74 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8">
-    <title>Webpack</title>
+    <title>Программа лояльности</title>
   </head>
   <body>
-    <h1>Hello, World!</h1>
-    <div>HEllo</div>
+    <main>
+      <section class="hero">
+        <div class="container hero__container">
+          <div class="hero__main flex">
+              <h1>Программа лояльности</h1>
+              <p class="hero__descr">Способ поощрить активное участие сотрудников в жизни компании, предлагая бонусы и привилегии за вклад в общее дело</p>
+          </div>
+        </div>
+      </section>
+      <section class="prog">
+        <div class="container prog__container">
+          <ul class="prog__choiceLIst flex">
+            <li><button data-target="all" class="prog__choiceBtn active">Все</button></li>
+            <li><button data-target="development" class="prog__choiceBtn">Развитие</button></li>
+            <li><button data-target="sport" class="prog__choiceBtn">Спорт и фитнес</button></li>
+            <li><button data-target="leisure" class="prog__choiceBtn">Досуг</button></li>
+            <li><button data-target="health" class="prog__choiceBtn">Здоровье</button></li>
+          </ul>
+          <ul class="prog__compList flex">
+            <li class="prog__item development">
+              <a class="prog__compItem flex" href="#">
+                <div class="prog__itemIcon prog__itemIcon_lerna"></div>
+                <div>
+                  <div class="prog__itemTitle">Скидка 80%</div>
+                  <p class="prog__itemDescr">Онлайн-обучение на единой платформе</p>
+                </div>
+                <span class="prog__topic">#Развитие</span>
+
+              </a>
+            </li>
+            <li class="prog__item sport">
+              <a class="prog__compItem flex" href="#">
+                <div class="prog__itemIcon prog__itemIcon_lerna"></div>
+                <div>
+                  <div class="prog__itemTitle">Скидка 80%</div>
+                  <p class="prog__itemDescr">Онлайн-обучение на единой платформе</p>
+                </div>
+                <span class="prog__topic">#Спорт_и_фитнес</span>
+              </a>
+            </li>
+            <li class="prog__item leisure">
+              <a class="prog__compItem flex" href="#">
+                <div class="prog__itemIcon prog__itemIcon_lerna"></div>
+                <div>
+                  <div class="prog__itemTitle">Скидка 80%</div>
+                  <p class="prog__itemDescr">Онлайн-обучение на единой платформе</p>
+                </div>
+                <span class="prog__topic">#Досуг_и_мероприятия</span>
+              </a>
+            </li>
+            <li class="prog__item health">
+              <a class="prog__compItem flex" href="#">
+                <div class="prog__itemIcon prog__itemIcon_lerna"></div>
+                <div>
+                  <div class="prog__itemTitle">Скидка 80%</div>
+                  <p class="prog__itemDescr">Онлайн-обучение на единой платформе</p>
+                </div>
+                <span class="prog__topic">#Здоровье</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+    </main>
+    <footer></footer>
   </body>
 </html>
