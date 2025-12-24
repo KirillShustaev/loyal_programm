@@ -1,0 +1,909 @@
+<style>
+html {
+  line-height: 1.15;
+
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+main {
+  display: block;
+}
+
+h1 {
+  margin: .67em 0;
+  font-size: 2em;
+  ;
+}
+
+hr {
+  overflow: visible;
+  box-sizing: content-box;
+  height: 0;
+  ;
+}
+
+pre {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+a {
+  background-color: transparent;
+}
+
+abbr[title] {
+  border-bottom: none;
+          text-decoration: underline;
+          text-decoration: underline dotted;
+
+  -webkit-text-decoration: underline dotted;
+  ;
+}
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub,
+sup {
+  position: relative;
+  font-size: 75%;
+  line-height: 0;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -.25em;
+}
+
+sup {
+  top: -.5em;
+}
+
+img {
+  border-style: none;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  margin: 0;
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  ;
+}
+
+button,
+input {
+  overflow: visible;
+}
+
+button,
+select {
+  text-transform: none;
+}
+
+[type=button],
+[type=reset],
+[type=submit],
+button {
+  -webkit-appearance: button;
+}
+
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner,
+button::-moz-focus-inner {
+  padding: 0;
+  border-style: none;
+  ;
+}
+
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring,
+button:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+fieldset {
+  padding: .35em .75em .625em;
+}
+
+legend {
+  display: table;
+  box-sizing: border-box;
+  max-width: 100%;
+  padding: 0;
+  color: inherit;
+  white-space: normal;
+}
+
+progress {
+  vertical-align: baseline;
+}
+
+textarea {
+  overflow: auto;
+}
+
+[type=checkbox],
+[type=radio] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+[type=search] {
+  outline-offset: -2px;
+
+  -webkit-appearance: textfield;
+  ;
+}
+
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+::-webkit-file-upload-button {
+  font: inherit;
+
+  -webkit-appearance: button;
+  ;
+}
+
+details {
+  display: block;
+}
+
+summary {
+  display: list-item;
+}
+
+[hidden],
+template {
+  display: none;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 10px;
+
+  scroll-behavior: smooth;
+}
+
+*,
+:after,
+:before {
+  box-sizing: inherit;
+}
+
+@font-face {
+  font-family: TT_Moscow;
+  font-weight: 400;
+  font-style: normal;
+
+  font-display: swap;
+  src: local("TT_Moscow-Regular"), url(https://econom.mos.ru/mira/Do?doaction=DownloadFileWithStatisticField&fileId=604471&downloadFileId=lzL11OR22Ky8hzvqNxTfkQ&accessToken=sUtW3nQOcY-oMKgWgGN0YALW7Ru5KZ7RR2kKdFcOMkcS1Qxv6-cucME94PPpUke_SIaTO1Ow9-ekHlZwJsm6yaHaNfqc_cDe1fmdMh1ZmTnf-9emcsfeDBfNoOYIRZDpCmK8vsnChKKF15emNmWgTLef3qYG04VGpihv2NieJIByBZJx_i31ww5c9SfUxCoaYJXDH_6jcMIYDb2IwGmQkqnjNdqTtcnqR4Gy1FyvmXKDFgqye8I5YQmkJQ3T0xqu-o_tagScS0ZooSjFEs8yO4OnoiTnj2Tdl1wYleVu66casr7d9sCI2-T8YumbcpdovMiUah-n2Uvbnho25wXfWHUC0BUsRVtvW4vsTalfMSfsS-5ekz5Y_O3FfAwyjd9AwFS_g4VPMtAA1uunqyge_dQ8diSe1GmIjdNzlXdKml0x6Ok5YkGRDtV2wgCoYXxXE1dL5lAn9_OLOW2Bme-Wp4EdU-omopnRVTM0Kh_2ovXR3ENIRhim--RcCnQsfP9f8migwgykrF2laBl9du7ZbjL_Bq3nG5IpWZq3eqnJqpnXBBzhOlJwkuRMe4hdwCAo&_=1766478705655) format("truetype");
+}
+
+@font-face {
+  font-family: TT_Moscow;
+  font-weight: 500;
+  font-style: normal;
+
+  font-display: swap;
+  src: local("TT_Moscow-Medium"), url(https://econom.mos.ru/mira/Do?doaction=DownloadFileWithStatisticField&fileId=604470&downloadFileId=dFcJEOOVUNcXW4uAUIsOqQ&accessToken=sUtW3nQOcY-oMKgWgGN0YAuRtgyUygtc005_oo18n8AS1Qxv6-cucME94PPpUke_SIaTO1Ow9-ekHlZwJsm6yaHaNfqc_cDe1fmdMh1ZmTnf-9emcsfeDBfNoOYIRZDpCmK8vsnChKKF15emNmWgTLef3qYG04VGpihv2NieJID_LXA4K6nD_uoax3mbSt7JndmVE9BgZXTGk754r7WIaLnkmefX8mcqPF__0f46ADuDFgqye8I5YQmkJQ3T0xqu-o_tagScS0ZooSjFEs8yO4OnoiTnj2Tdl1wYleVu66casr7d9sCI2-T8YumbcpdovMiUah-n2Uvbnho25wXfWHUC0BUsRVtvW4vsTalfMSfsS-5ekz5Y_O3FfAwyjd9AwFS_g4VPMtAA1uunqyge_dQ8diSe1GmIjdNzlXdKml0x6Ok5YkGRDtV2wgCoYXxXE1dL5lAn9_OLOW2Bme-Wp4EdU-omopnRVTM0Kh_2ovXR3ENIRhim--RcCnQsfP9f8migwgykrF2laBl9du7ZbjL_Bq3nG5IpWZq3eqnJqpnXBBzhOlJwkuRMe4hdwCAo&_=1766478612780) format("truetype");
+}
+
+@font-face {
+  font-family: TT_Moscow;
+  font-weight: 700;
+  font-style: normal;
+
+  font-display: swap;
+  src: local("TT_Moscow-Bold"), url(https://econom.mos.ru/mira/Do?doaction=DownloadFileWithStatisticField&fileId=604469&downloadFileId=pJgmlHhMsU-4SZQVtDOtbw&accessToken=sUtW3nQOcY-oMKgWgGN0YFuULPUQKKejxK6tIAzZZTQS1Qxv6-cucME94PPpUke_SIaTO1Ow9-ekHlZwJsm6yaHaNfqc_cDe1fmdMh1ZmTnf-9emcsfeDBfNoOYIRZDpCmK8vsnChKKF15emNmWgTLef3qYG04VGpihv2NieJIBPI2LzrgxCo5cDk3587uVD5509_PFcKkz3CttuLvt8kseA7oWDZbR8ZsKh-7ZZvLGDFgqye8I5YQmkJQ3T0xqu-o_tagScS0ZooSjFEs8yO4OnoiTnj2Tdl1wYleVu66casr7d9sCI2-T8YumbcpdovMiUah-n2Uvbnho25wXfWHUC0BUsRVtvW4vsTalfMSfsS-5ekz5Y_O3FfAwyjd9AwFS_g4VPMtAA1uunqyge_dQ8diSe1GmIjdNzlXdKml0x6Ok5YkGRDtV2wgCoYXxXE1dL5lAn9_OLOW2Bme-Wp4EdU-omopnRVTM0Kh_2ovXR3ENIRhim--RcCnQsfP9f8migwgykrF2laBl9du7ZbjL_Bq3nG5IpWZq3eqnJqpnXBBzhOlJwkuRMe4hdwCAo&_=1766478587746) format("truetype");
+}
+
+body {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 360px;
+  min-height: 100vh;
+  font-family: TT_Moscow, Montserrat, Benzin, sans-serif;
+  background-color: #ffffff;
+  ;
+}
+
+section {
+  max-width: 1920px;
+  margin: 0 auto;
+  ;
+}
+
+main {
+  flex-grow: 1;
+}
+
+footer {
+  flex-shrink: 0;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  ;
+}
+
+ul {
+  margin: 0 !important;
+  padding: 0 !important;
+  list-style-type: none !important;
+}
+
+button {
+  padding: 0;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+  ;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+input {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  ;
+}
+
+address {
+  font-style: normal;
+}
+
+select {
+  outline: none;
+  cursor: pointer;
+
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  ;
+}
+
+.container {
+  max-width: 1920px;
+  margin: 0 auto;
+  ;
+}
+
+.flex {
+  display: flex;
+}
+
+.grid {
+  display: grid;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+
+input[type=number] {
+     -moz-appearance: textfield;
+  -webkit-appearance: textfield;
+          appearance: textfield;
+}
+
+input[type=search]::-webkit-search-cancel-button,
+input[type=search]::-webkit-search-decoration,
+input[type=search]::-webkit-search-results-button,
+input[type=search]::-webkit-search-results-decoration {
+  display: none;
+}
+
+blockquote,
+hr {
+  margin: 0;
+}
+
+hr {
+  border: none;
+}
+
+.container {
+  width: 100%;
+
+  padding-inline: min(6.25vw, 120px);
+  ;
+}
+
+.hero {
+  background-color: #ffffff;
+
+  padding-block: min(2.08vw, 40px) min(3.13vw, 60px);
+}
+
+.hero__main {
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 100%;
+  min-height: min(29.22vw, 561px);
+  padding-left: min(2.6vw, 50px);
+  border-radius: min(.52vw, 10px);
+  background-image: url(https://econom.mos.ru/mira/Do?doaction=DownloadFileWithStatisticField&fileId=604454&downloadFileId=9A0Z-Rvc-E-VgQzA7YGmjw&accessToken=sUtW3nQOcY-oMKgWgGN0YF_trBxXXj-oQlsA9MLMzm0S1Qxv6-cucME94PPpUke_SIaTO1Ow9-ekHlZwJsm6yaHaNfqc_cDe1fmdMh1ZmTnf-9emcsfeDBfNoOYIRZDpCmK8vsnChKKF15emNmWgTLef3qYG04VGpihv2NieJIASopHMYChw6NXqhGW-hJOgHTjnr27X97nlYkELMQAIO4tF9f6AaZR2FbY-OlhMgIiDFgqye8I5YQmkJQ3T0xqu-o_tagScS0ZooSjFEs8yO4OnoiTnj2Tdl1wYleVu66casr7d9sCI2-T8YumbcpdovMiUah-n2Uvbnho25wXfWHUC0BUsRVtvW4vsTalfMSfsS-5ekz5Y_O3FfAwyjd9AwFS_g4VPMtAA1uunqyge_dQ8diSe1GmIjdNzlXdKml0x6Ok5YkGRDtV2wgCoYXxXE1dL5lAn9_OLOW2Bme-Wp4EdU-omopnRVTM0Kh_2ovXR3ENIRhim--RcCnQsfP9f8migwgykrF2laBl9du7ZbjL_Bq3nG5IpWZq3eqnJqpnXBBzhOlJwkuRMe4hdwCAo&_=1766478455126);
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: cover;
+
+  row-gap: min(.78vw, 15px);
+}
+
+.hero h1 {
+  font-size: min(3.13vw, 60px);
+  font-weight: 700;
+}
+
+.hero h1,
+.hero__descr {
+  line-height: 100%;
+  color: #252525;
+  letter-spacing: 0;
+  ;
+}
+
+.hero__descr {
+  max-width: min(35.57vw, 683px);
+  font-size: min(1.04vw, 20px);
+  font-weight: 400;
+}
+
+.prog {
+  background-color: #f5f5f5;
+
+  padding-block: min(2.6vw, 50px) min(5.21vw, 100px);
+}
+
+.prog__choiceLIst {
+  margin-bottom: min(1.56vw, 30px) !important;
+
+  -moz-column-gap: min(.78vw, 15px);
+       column-gap: min(.78vw, 15px);
+}
+
+.prog__choiceBtn {
+  padding: min(.52vw, 10px) min(1.56vw, 30px);
+  border-radius: min(1.56vw, 30px);
+  font-size: min(1.25vw, 24px);
+  font-weight: 500;
+  font-style: Medium;
+  line-height: 100%;
+  color: #868686;
+  letter-spacing: 0;
+  background-color: #ffffff;
+  ;
+}
+
+.prog__compList {
+  flex-wrap: wrap;
+
+/* justify-content: space-between; */
+
+  row-gap: min(1.09vw, 21px);
+  column-gap: min(1.04vw, 20px);
+}
+
+.prog__compItem {
+  position: relative;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: min(18.85vw, 362px);
+  padding: min(1.56vw, 30px);
+  border-radius: min(.52vw, 10px);
+  background-image: url(https://econom.mos.ru/mira/Do?doaction=DownloadFileWithStatisticField&fileId=604459&downloadFileId=uWivpd8IPOhqWd5XyZaFJQ&accessToken=sUtW3nQOcY-oMKgWgGN0YAxzyfhzZ3j-nbmuS2jmFIsS1Qxv6-cucME94PPpUke_SIaTO1Ow9-ekHlZwJsm6yaHaNfqc_cDe1fmdMh1ZmTnf-9emcsfeDBfNoOYIRZDpCmK8vsnChKKF15emNmWgTLef3qYG04VGpihv2NieJICx3aiChh4Q5QIMIOxLPANs4yJu2raZjH0EAxuFignE6VcLcSSkA3h4pgQv989A1weDFgqye8I5YQmkJQ3T0xqu-o_tagScS0ZooSjFEs8yO4OnoiTnj2Tdl1wYleVu66casr7d9sCI2-T8YumbcpdovMiUah-n2Uvbnho25wXfWHUC0BUsRVtvW4vsTalfMSfsS-5ekz5Y_O3FfAwyjd9AwFS_g4VPMtAA1uunqyge_dQ8diSe1GmIjdNzlXdKml0x6Ok5YkGRDtV2wgCoYXxXE1dL5lAn9_OLOW2Bme-Wp4EdU-omopnRVTM0Kh_2ovXR3ENIRhim--RcCnQsfP9f8migwgykrF2laBl9du7ZbjL_Bq3nG5IpWZq3eqnJqpnXBBzhOlJwkuRMe4hdwCAo&_=1766478504522);
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: cover;
+  cursor: pointer;
+  transition: background-image .3s ease-in-out;
+}
+
+.prog__item {
+  width: calc((100% - min(2.08vw, 40px)) / 3);
+}
+
+.prog__compItem:after {
+  content: "→";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  display: grid;
+  width: min(2.08vw, 40px);
+  height: min(2.08vw, 40px);
+  border-radius: 100%;
+  font-size: min(.94vw, 18px);
+  color: #ffffff;
+  background-color: #b91827;
+  transition: background-color .3s ease-in-out, color .3s ease-in-out, rotate .3s ease-in-out;
+
+  place-items: center;
+}
+
+.prog__itemIcon {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.prog__itemIcon_lerna {
+  width: min(4.9vw, 94px);
+  height: min(1.3vw, 25px);
+  background-image: url(https://econom.mos.ru/mira/Do?doaction=DownloadFileWithStatisticField&fileId=604472&downloadFileId=tHKdAIV7cULwDCUDJDQDzQ&accessToken=sUtW3nQOcY-oMKgWgGN0YD6t5gXOIOcG37cuPnGwOiwS1Qxv6-cucME94PPpUke_SIaTO1Ow9-ekHlZwJsm6yaHaNfqc_cDe1fmdMh1ZmTnf-9emcsfeDBfNoOYIRZDpCmK8vsnChKKF15emNmWgTLef3qYG04VGpihv2NieJIAfKYP9tUbMIonxSCL8x2baed0vTtRW2p_Myv1x2Ezysf5l4tiT34Sldy-sqAS4DcODFgqye8I5YQmkJQ3T0xqu-o_tagScS0ZooSjFEs8yO4OnoiTnj2Tdl1wYleVu66casr7d9sCI2-T8YumbcpdovMiUah-n2Uvbnho25wXfWHUC0BUsRVtvW4vsTalfMSfsS-5ekz5Y_O3FfAwyjd9AwFS_g4VPMtAA1uunqyge_dQ8diSe1GmIjdNzlXdKml0x6Ok5YkGRDtV2wgCoYXxXE1dL5lAn9_OLOW2Bme-Wp4EdU-omopnRVTM0Kh_2ovXR3ENIRhim--RcCnQsfP9f8migwgykrF2laBl9du7ZbjL_Bq3nG5IpWZq3eqnJqpnXBBzhOlJwkuRMe4hdwCAo&_=1766478768315);
+}
+
+.prog__itemIcon_2 {
+  width: min(8.33vw, 160px);
+  height: min(1.3vw, 25px);
+  background-image: url(https://econom.mos.ru/mira/Do?doaction=DownloadFileWithStatisticField&fileId=604477&downloadFileId=m0E-bz_KTCLMO59Wyl2Daw&accessToken=sUtW3nQOcY-oMKgWgGN0YFPOybdZB6J98QszgmyxjrUS1Qxv6-cucME94PPpUke_SIaTO1Ow9-ekHlZwJsm6yaHaNfqc_cDe1fmdMh1ZmTnf-9emcsfeDBfNoOYIRZDpCmK8vsnChKKF15emNmWgTLef3qYG04VGpihv2NieJIAhpcS9WuS7XNP5Q0aBIS6_alDmHSm1j9aR206Qpgr2Un6bzDBAJxy-y_qdCJ_RwUyDFgqye8I5YQmkJQ3T0xqu-o_tagScS0ZooSjFEs8yO4OnoiTnj2Tdl1wYleVu66casr7d9sCI2-T8YumbcpdovMiUah-n2Uvbnho25wXfWHUC0BUsRVtvW4vsTalfMSfsS-5ekz5Y_O3FfAwyjd9AwFS_g4VPMtAA1uunqyge_dQ8diSe1GmIjdNzlXdKml0x6Ok5YkGRDtV2wgCoYXxXE1dL5lAn9_OLOW2Bme-Wp4EdU-omopnRVTM0Kh_2ovXR3ENIRhim--RcCnQsfP9f8migwgykrF2laBl9du7ZbjL_Bq3nG5IpWZq3eqnJqpnXBBzhOlJwkuRMe4hdwCAo&_=1766487035117);
+}
+
+.prog__itemIcon_3 {
+  width: min(11.82vw, 227px);
+  height: min(1.3vw, 25px);
+  background-image: url(https://econom.mos.ru/mira/Do?doaction=DownloadFileWithStatisticField&fileId=604482&downloadFileId=omvhdBIUqIrIa_FKEpNwWQ&accessToken=sUtW3nQOcY-oMKgWgGN0YC1EW7kwv5QD48QSG3rZnZMS1Qxv6-cucME94PPpUke_SIaTO1Ow9-ekHlZwJsm6yaHaNfqc_cDe1fmdMh1ZmTnf-9emcsfeDBfNoOYIRZDpCmK8vsnChKKF15emNmWgTLef3qYG04VGpihv2NieJIAz1sCF3XeypxuZ3dQGnBQlweWZuQ9bkx_0T3FmDQx33kZNvb79wJaTr1cHBAsla9GDFgqye8I5YQmkJQ3T0xqu-o_tagScS0ZooSjFEs8yO4OnoiTnj2Tdl1wYleVu66casr7d9sCI2-T8YumbcpdovMiUah-n2Uvbnho25wXfWHUC0BUsRVtvW4vsTalfMSfsS-5ekz5Y_O3FfAwyjd9AwFS_g4VPMtAA1uunqyge_dQ8diSe1GmIjdNzlXdKml0x6Ok5YkGRDtV2wgCoYXxXE1dL5lAn9_OLOW2Bme-Wp4EdU-omopnRVTM0Kh_2ovXR3ENIRhim--RcCnQsfP9f8migwgykrF2laBl9du7ZbjL_Bq3nG5IpWZq3eqnJqpnXBBzhOlJwkuRMe4hdwCAo&_=1766487159567);
+}
+
+.prog__itemIcon_4 {
+  width: min(8.07vw, 155px);
+  height: min(2.55vw, 49px);
+  background-image: url(https://econom.mos.ru/mira/Do?doaction=DownloadFileWithStatisticField&fileId=604487&downloadFileId=OuSOTkg63RbCEjaPlNL6WA&accessToken=sUtW3nQOcY-oMKgWgGN0YODQmHY1f7bByTFmVYdS_SUS1Qxv6-cucME94PPpUke_SIaTO1Ow9-ekHlZwJsm6yaHaNfqc_cDe1fmdMh1ZmTnf-9emcsfeDBfNoOYIRZDpCmK8vsnChKKF15emNmWgTLef3qYG04VGpihv2NieJIBc3JAdydD9uaIwWWP0FIKdJAWp2tR13AvWVMYIJ7s_cfUAJOQsSlHho7wasMFW-HqDFgqye8I5YQmkJQ3T0xqu-o_tagScS0ZooSjFEs8yO4OnoiTnj2Tdl1wYleVu66casr7d9sCI2-T8YumbcpdovMiUah-n2Uvbnho25wXfWHUC0BUsRVtvW4vsTalfMSfsS-5ekz5Y_O3FfAwyjd9AwFS_g4VPMtAA1uunqyge_dQ8diSe1GmIjdNzlXdKml0x6Ok5YkGRDtV2wgCoYXxXE1dL5lAn9_OLOW2Bme-Wp4EdU-omopnRVTM0Kh_2ovXR3ENIRhim--RcCnQsfP9f8migwgykrF2laBl9du7ZbjL_Bq3nG5IpWZq3eqnJqpnXBBzhOlJwkuRMe4hdwCAo&_=1766487174772);
+}
+
+.prog__itemIcon_5 {
+  width: min(10.05vw, 193px);
+  height: min(1.82vw, 35px);
+  background-image: url(https://econom.mos.ru/mira/Do?doaction=DownloadFileWithStatisticField&fileId=604492&downloadFileId=tqLZPmgXkMxBDc0JKJZF8A&accessToken=sUtW3nQOcY-oMKgWgGN0YFNLsxqb1JoWCOVMDDSV-JMS1Qxv6-cucME94PPpUke_SIaTO1Ow9-ekHlZwJsm6yaHaNfqc_cDe1fmdMh1ZmTnf-9emcsfeDBfNoOYIRZDpCmK8vsnChKKF15emNmWgTLef3qYG04VGpihv2NieJIANidbz58sezyeU21Bp0fQelxpJL_k98ElPxPsTXcTXTqyUfsgZFDRM4v2nD-lbWiWDFgqye8I5YQmkJQ3T0xqu-o_tagScS0ZooSjFEs8yO4OnoiTnj2Tdl1wYleVu66casr7d9sCI2-T8YumbcpdovMiUah-n2Uvbnho25wXfWHUC0BUsRVtvW4vsTalfMSfsS-5ekz5Y_O3FfAwyjd9AwFS_g4VPMtAA1uunqyge_dQ8diSe1GmIjdNzlXdKml0x6Ok5YkGRDtV2wgCoYXxXE1dL5lAn9_OLOW2Bme-Wp4EdU-omopnRVTM0Kh_2ovXR3ENIRhim--RcCnQsfP9f8migwgykrF2laBl9du7ZbjL_Bq3nG5IpWZq3eqnJqpnXBBzhOlJwkuRMe4hdwCAo&_=1766487195426);
+}
+
+.prog__itemIcon_6 {
+  width: min(9.01vw, 173px);
+  height: min(2.29vw, 44px);
+  background-image: url(https://econom.mos.ru/mira/Do?doaction=DownloadFileWithStatisticField&fileId=604497&downloadFileId=zMZQoDtg_C0BmwCUnp75ug&accessToken=sUtW3nQOcY-oMKgWgGN0YD6ttR4LlXPubhcB3mcDb60S1Qxv6-cucME94PPpUke_SIaTO1Ow9-ekHlZwJsm6yaHaNfqc_cDe1fmdMh1ZmTnf-9emcsfeDBfNoOYIRZDpCmK8vsnChKKF15emNmWgTLef3qYG04VGpihv2NieJIA0zClbnmvqEqqfoOllpiNhByy0nH4otkBk_FClAChosBCttC9VMEBhuzb3mcEmveuDFgqye8I5YQmkJQ3T0xqu-o_tagScS0ZooSjFEs8yO4OnoiTnj2Tdl1wYleVu66casr7d9sCI2-T8YumbcpdovMiUah-n2Uvbnho25wXfWHUC0BUsRVtvW4vsTalfMSfsS-5ekz5Y_O3FfAwyjd9AwFS_g4VPMtAA1uunqyge_dQ8diSe1GmIjdNzlXdKml0x6Ok5YkGRDtV2wgCoYXxXE1dL5lAn9_OLOW2Bme-Wp4EdU-omopnRVTM0Kh_2ovXR3ENIRhim--RcCnQsfP9f8migwgykrF2laBl9du7ZbjL_Bq3nG5IpWZq3eqnJqpnXBBzhOlJwkuRMe4hdwCAo&_=1766487212598);
+}
+
+.prog__itemIcon_7 {
+  width: min(7.24vw, 139px);
+  height: min(2.55vw, 49px);
+  background-image: url(https://econom.mos.ru/mira/Do?doaction=DownloadFileWithStatisticField&fileId=604502&downloadFileId=AoAs3VxmBpWYbmctKpaiyw&accessToken=sUtW3nQOcY-oMKgWgGN0YA-duQ-SFwmQl1LbpuSMAYQS1Qxv6-cucME94PPpUke_SIaTO1Ow9-ekHlZwJsm6yaHaNfqc_cDe1fmdMh1ZmTnf-9emcsfeDBfNoOYIRZDpCmK8vsnChKKF15emNmWgTLef3qYG04VGpihv2NieJIAvUv2kLv4EZMi5GPcj_PDXEbgJEL_rdck1w1YDGG2VbQtBypLrznv0muSxWcRH6SSDFgqye8I5YQmkJQ3T0xqu-o_tagScS0ZooSjFEs8yO4OnoiTnj2Tdl1wYleVu66casr7d9sCI2-T8YumbcpdovMiUah-n2Uvbnho25wXfWHUC0BUsRVtvW4vsTalfMSfsS-5ekz5Y_O3FfAwyjd9AwFS_g4VPMtAA1uunqyge_dQ8diSe1GmIjdNzlXdKml0x6Ok5YkGRDtV2wgCoYXxXE1dL5lAn9_OLOW2Bme-Wp4EdU-omopnRVTM0Kh_2ovXR3ENIRhim--RcCnQsfP9f8migwgykrF2laBl9du7ZbjL_Bq3nG5IpWZq3eqnJqpnXBBzhOlJwkuRMe4hdwCAo&_=1766487267155);
+}
+
+.prog__itemIcon_8 {
+  width: min(9.38vw, 180px);
+  height: min(2.19vw, 42px);
+  background-image: url(https://econom.mos.ru/mira/Do?doaction=DownloadFileWithStatisticField&fileId=604517&downloadFileId=LvXVIN1PsdXIpLDwJwx3FQ&accessToken=sUtW3nQOcY-oMKgWgGN0YN3rUdSEqye2QmrzNuC3qpAS1Qxv6-cucME94PPpUke_SIaTO1Ow9-ekHlZwJsm6yaHaNfqc_cDe1fmdMh1ZmTnf-9emcsfeDBfNoOYIRZDpCmK8vsnChKKF15emNmWgTLef3qYG04VGpihv2NieJID08cM00zMvBZP8Z6oDqLroQk2qnzhJPz9rLSnRPQ0HQggeQ09KCLjti6aK2DnChOaDFgqye8I5YQmkJQ3T0xqu-o_tagScS0ZooSjFEs8yO4OnoiTnj2Tdl1wYleVu66casr7d9sCI2-T8YumbcpdovMiUah-n2Uvbnho25wXfWHUC0BUsRVtvW4vsTalfMSfsS-5ekz5Y_O3FfAwyjd9AwFS_g4VPMtAA1uunqyge_dQ8diSe1GmIjdNzlXdKml0x6Ok5YkGRDtV2wgCoYXxXE1dL5lAn9_OLOW2Bme-Wp4EdU-omopnRVTM0Kh_2ovXR3ENIRhim--RcCnQsfP9f8migwgykrF2laBl9du7ZbjL_Bq3nG5IpWZq3eqnJqpnXBBzhOlJwkuRMe4hdwCAo&_=1766487734860);
+}
+
+.prog__itemIcon_9 {
+  width: min(16.25vw, 312px);
+  height: min(.83vw, 16px);
+  background-image: url(https://econom.mos.ru/mira/Do?doaction=DownloadFileWithStatisticField&fileId=604507&downloadFileId=geJhFarHgEVKQEbcPtqs1Q&accessToken=sUtW3nQOcY-oMKgWgGN0YMocfVG8AAKr1RxZNJOFSswS1Qxv6-cucME94PPpUke_SIaTO1Ow9-ekHlZwJsm6yaHaNfqc_cDe1fmdMh1ZmTnf-9emcsfeDBfNoOYIRZDpCmK8vsnChKKF15emNmWgTLef3qYG04VGpihv2NieJIDPmvHDosr-LuvCt9ltkI8kZ3F983D6q5ASjOIkNYeZTqSskcqxyXRjs2EI709gP6eDFgqye8I5YQmkJQ3T0xqu-o_tagScS0ZooSjFEs8yO4OnoiTnj2Tdl1wYleVu66casr7d9sCI2-T8YumbcpdovMiUah-n2Uvbnho25wXfWHUC0BUsRVtvW4vsTalfMSfsS-5ekz5Y_O3FfAwyjd9AwFS_g4VPMtAA1uunqyge_dQ8diSe1GmIjdNzlXdKml0x6Ok5YkGRDtV2wgCoYXxXE1dL5lAn9_OLOW2Bme-Wp4EdU-omopnRVTM0Kh_2ovXR3ENIRhim--RcCnQsfP9f8migwgykrF2laBl9du7ZbjL_Bq3nG5IpWZq3eqnJqpnXBBzhOlJwkuRMe4hdwCAo&_=1766487511598);
+}
+
+.prog__iconLogo_1 {
+  width: min(7.14vw, 137px);
+  height: min(2.92vw, 56px);
+  background-image: url(https://econom.mos.ru/mira/Do?doaction=DownloadFileWithStatisticField&fileId=604522&downloadFileId=c-8ZdMYe1-9pTZFeSNHH1Q&accessToken=sUtW3nQOcY-oMKgWgGN0YC-qNJHL08KDKBNkiKDd0Z0S1Qxv6-cucME94PPpUke_SIaTO1Ow9-ekHlZwJsm6yaHaNfqc_cDe1fmdMh1ZmTnf-9emcsfeDBfNoOYIRZDpCmK8vsnChKKF15emNmWgTLef3qYG04VGpihv2NieJIDHqkjyk4ftiryTcF3Tt_-O2dOw0hgv6Mag9ZEuVCdpettdCQ7yFUDY2RhsunrPzQ-DFgqye8I5YQmkJQ3T0xqu-o_tagScS0ZooSjFEs8yO4OnoiTnj2Tdl1wYleVu66casr7d9sCI2-T8YumbcpdovMiUah-n2Uvbnho25wXfWHUC0BUsRVtvW4vsTalfMSfsS-5ekz5Y_O3FfAwyjd9AwFS_g4VPMtAA1uunqyge_dQ8diSe1GmIjdNzlXdKml0x6Ok5YkGRDtV2wgCoYXxXE1dL5lAn9_OLOW2Bme-Wp4EdU-omopnRVTM0Kh_2ovXR3ENIRhim--RcCnQsfP9f8migwgykrF2laBl9du7ZbjL_Bq3nG5IpWZq3eqnJqpnXBBzhOlJwkuRMe4hdwCAo&_=1766489283818);
+}
+
+.prog__iconLogo_2 {
+  width: min(8.70vw, 167px);
+  height: min(3.39vw, 65px);
+  background-image: url(https://econom.mos.ru/mira/Do?doaction=DownloadFileWithStatisticField&fileId=604527&downloadFileId=cE29UqZfmA7Knqp0yOA4TQ&accessToken=sUtW3nQOcY-oMKgWgGN0YMZCP6aIRsrOWOidRCEO6hsS1Qxv6-cucME94PPpUke_SIaTO1Ow9-ekHlZwJsm6yaHaNfqc_cDe1fmdMh1ZmTnf-9emcsfeDBfNoOYIRZDpCmK8vsnChKKF15emNmWgTLef3qYG04VGpihv2NieJIDzrnJDE022TmbQit_veCUIs2fw5lLI9u6GEJntIVBwsUTfxQrAUxLSPCIwpeJb6B-DFgqye8I5YQmkJQ3T0xqu-o_tagScS0ZooSjFEs8yO4OnoiTnj2Tdl1wYleVu66casr7d9sCI2-T8YumbcpdovMiUah-n2Uvbnho25wXfWHUC0BUsRVtvW4vsTalfMSfsS-5ekz5Y_O3FfAwyjd9AwFS_g4VPMtAA1uunqyge_dQ8diSe1GmIjdNzlXdKml0x6Ok5YkGRDtV2wgCoYXxXE1dL5lAn9_OLOW2Bme-Wp4EdU-omopnRVTM0Kh_2ovXR3ENIRhim--RcCnQsfP9f8migwgykrF2laBl9du7ZbjL_Bq3nG5IpWZq3eqnJqpnXBBzhOlJwkuRMe4hdwCAo&_=1766489298917);
+}
+
+.prog__iconLogo_3 {
+  width: min(4.95vw, 95px);
+  height: min(3.59vw, 69px);
+  background-image: url(https://econom.mos.ru/mira/Do?doaction=DownloadFileWithStatisticField&fileId=604532&downloadFileId=8YNGPsvAm8eKF51AX7WK2Q&accessToken=sUtW3nQOcY-oMKgWgGN0YMvP-4LCfgTGKzYXfhpEHygS1Qxv6-cucME94PPpUke_SIaTO1Ow9-ekHlZwJsm6yaHaNfqc_cDe1fmdMh1ZmTnf-9emcsfeDBfNoOYIRZDpCmK8vsnChKKF15emNmWgTLef3qYG04VGpihv2NieJIDuNY_WBr4HlxcfXwIZ1-X7lgzKNd058kFlYU6C6ESEKXwSD7zD_EnnsYAD4hIB14mDFgqye8I5YQmkJQ3T0xqu-o_tagScS0ZooSjFEs8yO4OnoiTnj2Tdl1wYleVu66casr7d9sCI2-T8YumbcpdovMiUah-n2Uvbnho25wXfWHUC0BUsRVtvW4vsTalfMSfsS-5ekz5Y_O3FfAwyjd9AwFS_g4VPMtAA1uunqyge_dQ8diSe1GmIjdNzlXdKml0x6Ok5YkGRDtV2wgCoYXxXE1dL5lAn9_OLOW2Bme-Wp4EdU-omopnRVTM0Kh_2ovXR3ENIRhim--RcCnQsfP9f8migwgykrF2laBl9du7ZbjL_Bq3nG5IpWZq3eqnJqpnXBBzhOlJwkuRMe4hdwCAo&_=1766489311860);
+}
+
+.prog__iconLogo_4 {
+  width: min(5.73vw, 110px);
+  height: min(3.91vw, 75px);
+  background-image: url(https://econom.mos.ru/mira/Do?doaction=DownloadFileWithStatisticField&fileId=604537&downloadFileId=mx9-tORg4VpgsxdwTh4lFg&accessToken=sUtW3nQOcY-oMKgWgGN0YKDZScVxE1kq0WlwPaJ0UAoS1Qxv6-cucME94PPpUke_SIaTO1Ow9-ekHlZwJsm6yaHaNfqc_cDe1fmdMh1ZmTnf-9emcsfeDBfNoOYIRZDpCmK8vsnChKKF15emNmWgTLef3qYG04VGpihv2NieJICjy6n71XjxPa2JalwFtNUFdECncWZEJPWFpvuOKBCbL0rrCGkRoTRK01Baq2q3I-qDFgqye8I5YQmkJQ3T0xqu-o_tagScS0ZooSjFEs8yO4OnoiTnj2Tdl1wYleVu66casr7d9sCI2-T8YumbcpdovMiUah-n2Uvbnho25wXfWHUC0BUsRVtvW4vsTalfMSfsS-5ekz5Y_O3FfAwyjd9AwFS_g4VPMtAA1uunqyge_dQ8diSe1GmIjdNzlXdKml0x6Ok5YkGRDtV2wgCoYXxXE1dL5lAn9_OLOW2Bme-Wp4EdU-omopnRVTM0Kh_2ovXR3ENIRhim--RcCnQsfP9f8migwgykrF2laBl9du7ZbjL_Bq3nG5IpWZq3eqnJqpnXBBzhOlJwkuRMe4hdwCAo&_=1766489334031);
+}
+
+.prog__iconLogo_5 {
+  width: min(10.10vw, 194px);
+  height: min(3.33vw, 64px);
+  background-image: url(https://econom.mos.ru/mira/Do?doaction=DownloadFileWithStatisticField&fileId=604542&downloadFileId=J3zxdOcnpZinf9kl3f39aQ&accessToken=sUtW3nQOcY-oMKgWgGN0YDirqUPlgkiaSTuOmC2dme8S1Qxv6-cucME94PPpUke_SIaTO1Ow9-ekHlZwJsm6yaHaNfqc_cDe1fmdMh1ZmTnf-9emcsfeDBfNoOYIRZDpCmK8vsnChKKF15emNmWgTLef3qYG04VGpihv2NieJIAVb_s4X6jgsdZ5wiz3jzE4JWCtY8Ogvxfr0YNZrRogMz4e11WJrMt1FazGYaCW092DFgqye8I5YQmkJQ3T0xqu-o_tagScS0ZooSjFEs8yO4OnoiTnj2Tdl1wYleVu66casr7d9sCI2-T8YumbcpdovMiUah-n2Uvbnho25wXfWHUC0BUsRVtvW4vsTalfMSfsS-5ekz5Y_O3FfAwyjd9AwFS_g4VPMtAA1uunqyge_dQ8diSe1GmIjdNzlXdKml0x6Ok5YkGRDtV2wgCoYXxXE1dL5lAn9_OLOW2Bme-Wp4EdU-omopnRVTM0Kh_2ovXR3ENIRhim--RcCnQsfP9f8migwgykrF2laBl9du7ZbjL_Bq3nG5IpWZq3eqnJqpnXBBzhOlJwkuRMe4hdwCAo&_=1766489351429);
+}
+
+.prog__iconLogo_6 {
+  width: min(10.36vw, 199px);
+  height: min(3.28vw, 63px);
+  background-image: url(https://econom.mos.ru/mira/Do?doaction=DownloadFileWithStatisticField&fileId=604547&downloadFileId=zjuTRwqib7xUGTj0RtOeDg&accessToken=sUtW3nQOcY-oMKgWgGN0YBYnr6ycB2mGyWJoxIKmmZcS1Qxv6-cucME94PPpUke_SIaTO1Ow9-ekHlZwJsm6yaHaNfqc_cDe1fmdMh1ZmTnf-9emcsfeDBfNoOYIRZDpCmK8vsnChKKF15emNmWgTLef3qYG04VGpihv2NieJICIHXf7Wwz82d8n_2lBx2bmoew6TF9KR8KA2qKFBvuKaMSuxVORvZeubeowclGUOraDFgqye8I5YQmkJQ3T0xqu-o_tagScS0ZooSjFEs8yO4OnoiTnj2Tdl1wYleVu66casr7d9sCI2-T8YumbcpdovMiUah-n2Uvbnho25wXfWHUC0BUsRVtvW4vsTalfMSfsS-5ekz5Y_O3FfAwyjd9AwFS_g4VPMtAA1uunqyge_dQ8diSe1GmIjdNzlXdKml0x6Ok5YkGRDtV2wgCoYXxXE1dL5lAn9_OLOW2Bme-Wp4EdU-omopnRVTM0Kh_2ovXR3ENIRhim--RcCnQsfP9f8migwgykrF2laBl9du7ZbjL_Bq3nG5IpWZq3eqnJqpnXBBzhOlJwkuRMe4hdwCAo&_=1766489371692);
+}
+
+.prog__iconLogo_7 {
+  width: min(7.55vw, 145px);
+  height: min(2.92vw, 56px);
+  background-image: url(https://econom.mos.ru/mira/Do?doaction=DownloadFileWithStatisticField&fileId=604552&downloadFileId=vVDUVojt1AEjfSjd-ki7rg&accessToken=sUtW3nQOcY-oMKgWgGN0YGAh6yA_CGe1hqnt7Ivn_a8S1Qxv6-cucME94PPpUke_SIaTO1Ow9-ekHlZwJsm6yaHaNfqc_cDe1fmdMh1ZmTnf-9emcsfeDBfNoOYIRZDpCmK8vsnChKKF15emNmWgTLef3qYG04VGpihv2NieJIDcShJS-qn_iDB5UUV3ljP8BiKrOwoncsuUeHYU8GHB_W4rZltpf2y5e_lqiIAu9XaDFgqye8I5YQmkJQ3T0xqu-o_tagScS0ZooSjFEs8yO4OnoiTnj2Tdl1wYleVu66casr7d9sCI2-T8YumbcpdovMiUah-n2Uvbnho25wXfWHUC0BUsRVtvW4vsTalfMSfsS-5ekz5Y_O3FfAwyjd9AwFS_g4VPMtAA1uunqyge_dQ8diSe1GmIjdNzlXdKml0x6Ok5YkGRDtV2wgCoYXxXE1dL5lAn9_OLOW2Bme-Wp4EdU-omopnRVTM0Kh_2ovXR3ENIRhim--RcCnQsfP9f8migwgykrF2laBl9du7ZbjL_Bq3nG5IpWZq3eqnJqpnXBBzhOlJwkuRMe4hdwCAo&_=1766489386426);
+}
+
+.prog__iconLogo_8 {
+  width: min(7.34vw, 141px);
+  height: min(4.38vw, 84px);
+  background-image: url(https://econom.mos.ru/mira/Do?doaction=DownloadFileWithStatisticField&fileId=604557&downloadFileId=Fd4sD2MJWVb3SF7_vbHfAA&accessToken=sUtW3nQOcY-oMKgWgGN0YJBr1sHrTURAtHZ3QgtdkDUS1Qxv6-cucME94PPpUke_SIaTO1Ow9-ekHlZwJsm6yaHaNfqc_cDe1fmdMh1ZmTnf-9emcsfeDBfNoOYIRZDpCmK8vsnChKKF15emNmWgTLef3qYG04VGpihv2NieJIBs9ioT7XGsnzAnZIvnTQvTLMmhB0lzE0ABhdZIr9D5xPYBRR5ezGRMnXI0fLxppG-DFgqye8I5YQmkJQ3T0xqu-o_tagScS0ZooSjFEs8yO4OnoiTnj2Tdl1wYleVu66casr7d9sCI2-T8YumbcpdovMiUah-n2Uvbnho25wXfWHUC0BUsRVtvW4vsTalfMSfsS-5ekz5Y_O3FfAwyjd9AwFS_g4VPMtAA1uunqyge_dQ8diSe1GmIjdNzlXdKml0x6Ok5YkGRDtV2wgCoYXxXE1dL5lAn9_OLOW2Bme-Wp4EdU-omopnRVTM0Kh_2ovXR3ENIRhim--RcCnQsfP9f8migwgykrF2laBl9du7ZbjL_Bq3nG5IpWZq3eqnJqpnXBBzhOlJwkuRMe4hdwCAo&_=1766489409756);
+}
+
+.prog__iconLogo_9 {
+  width: min(6.82vw, 131px);
+  height: min(5.10vw, 98px);
+  background-image: url(https://econom.mos.ru/mira/Do?doaction=DownloadFileWithStatisticField&fileId=604565&downloadFileId=JtxVyc8Nb0KcEj8a5nT4ng&accessToken=sUtW3nQOcY-oMKgWgGN0YDSdEQUf22qEo1H3ILL_QsoS1Qxv6-cucME94PPpUke_SIaTO1Ow9-ekHlZwJsm6yaHaNfqc_cDe1fmdMh1ZmTnf-9emcsfeDBfNoOYIRZDpCmK8vsnChKKF15emNmWgTLef3qYG04VGpihv2NieJIDzVV-a0Fbu3Din1U0J2k9r8V58AopBUp1TGep50nIhfqri2yBHh0j-LCTHRJm9Wv6DFgqye8I5YQmkJQ3T0xqu-o_tagScS0ZooSjFEs8yO4OnoiTnj2Tdl1wYleVu66casr7d9sCI2-T8YumbcpdovMiUah-n2Uvbnho25wXfWHUC0BUsRVtvW4vsTalfMSfsS-5ekz5Y_O3FfAwyjd9AwFS_g4VPMtAA1uunqyge_dQ8diSe1GmIjdNzlXdKml0x6Ok5YkGRDtV2wgCoYXxXE1dL5lAn9_OLOW2Bme-Wp4EdU-omopnRVTM0Kh_2ovXR3ENIRhim--RcCnQsfP9f8migwgykrF2laBl9du7ZbjL_Bq3nG5IpWZq3eqnJqpnXBBzhOlJwkuRMe4hdwCAo&_=1766492609518);
+}
+
+.prog__iconLogo_10 {
+  width: min(8.18vw, 157px);
+  height: min(3.54vw, 68px);
+  background-image: url(https://econom.mos.ru/mira/Do?doaction=DownloadFileWithStatisticField&fileId=604570&downloadFileId=JocVaiLd7NjhgDfCAAO52g&accessToken=sUtW3nQOcY-oMKgWgGN0YKMovq5GE3wDL6d0kA2ZMW8S1Qxv6-cucME94PPpUke_SIaTO1Ow9-ekHlZwJsm6yaHaNfqc_cDe1fmdMh1ZmTnf-9emcsfeDBfNoOYIRZDpCmK8vsnChKKF15emNmWgTLef3qYG04VGpihv2NieJIAvYnqSh8NkCmk_og-1v_IVcJawKF5DDOVcixoi6L3qsHZohLRXVMKXkdRdcG8hZy-DFgqye8I5YQmkJQ3T0xqu-o_tagScS0ZooSjFEs8yO4OnoiTnj2Tdl1wYleVu66casr7d9sCI2-T8YumbcpdovMiUah-n2Uvbnho25wXfWHUC0BUsRVtvW4vsTalfMSfsS-5ekz5Y_O3FfAwyjd9AwFS_g4VPMtAA1uunqyge_dQ8diSe1GmIjdNzlXdKml0x6Ok5YkGRDtV2wgCoYXxXE1dL5lAn9_OLOW2Bme-Wp4EdU-omopnRVTM0Kh_2ovXR3ENIRhim--RcCnQsfP9f8migwgykrF2laBl9du7ZbjL_Bq3nG5IpWZq3eqnJqpnXBBzhOlJwkuRMe4hdwCAo&_=1766492623853);
+}
+
+.prog__iconLogo_11 {
+  width: min(5.73vw, 110px);
+  height: min(4.27vw, 82px);
+  background-image: url(https://econom.mos.ru/mira/Do?doaction=DownloadFileWithStatisticField&fileId=604575&downloadFileId=rXOD9Xj71ielCDXPFZLHuA&accessToken=sUtW3nQOcY-oMKgWgGN0YMrX33xRddRnqH8M3rSktzQS1Qxv6-cucME94PPpUke_SIaTO1Ow9-ekHlZwJsm6yaHaNfqc_cDe1fmdMh1ZmTnf-9emcsfeDBfNoOYIRZDpCmK8vsnChKKF15emNmWgTLef3qYG04VGpihv2NieJICwMnCqm1Av8uG_1L1im0TuI-Yqk9gXH_NJMzfAyK-rj28KsB0PzfxnDqREgbFeYi2DFgqye8I5YQmkJQ3T0xqu-o_tagScS0ZooSjFEs8yO4OnoiTnj2Tdl1wYleVu66casr7d9sCI2-T8YumbcpdovMiUah-n2Uvbnho25wXfWHUC0BUsRVtvW4vsTalfMSfsS-5ekz5Y_O3FfAwyjd9AwFS_g4VPMtAA1uunqyge_dQ8diSe1GmIjdNzlXdKml0x6Ok5YkGRDtV2wgCoYXxXE1dL5lAn9_OLOW2Bme-Wp4EdU-omopnRVTM0Kh_2ovXR3ENIRhim--RcCnQsfP9f8migwgykrF2laBl9du7ZbjL_Bq3nG5IpWZq3eqnJqpnXBBzhOlJwkuRMe4hdwCAo&_=1766492637735);
+}
+
+.prog__iconLogo_12 {
+  width: min(7.45vw, 143px);
+  height: min(3.75vw, 72px);
+  background-image: url(https://econom.mos.ru/mira/Do?doaction=DownloadFileWithStatisticField&fileId=604580&downloadFileId=5q-7xZ-cnSEUz8gB1fP7ww&accessToken=sUtW3nQOcY-oMKgWgGN0YCcYZ7VDgvVbYwprRU7-lUYS1Qxv6-cucME94PPpUke_SIaTO1Ow9-ekHlZwJsm6yaHaNfqc_cDe1fmdMh1ZmTnf-9emcsfeDBfNoOYIRZDpCmK8vsnChKKF15emNmWgTLef3qYG04VGpihv2NieJID_JaILWnzPFWTjxEdLQGqcgS8acFwTwf3TTcL8IFPoRcnRg2qUPhX5fj8aTODJLv-DFgqye8I5YQmkJQ3T0xqu-o_tagScS0ZooSjFEs8yO4OnoiTnj2Tdl1wYleVu66casr7d9sCI2-T8YumbcpdovMiUah-n2Uvbnho25wXfWHUC0BUsRVtvW4vsTalfMSfsS-5ekz5Y_O3FfAwyjd9AwFS_g4VPMtAA1uunqyge_dQ8diSe1GmIjdNzlXdKml0x6Ok5YkGRDtV2wgCoYXxXE1dL5lAn9_OLOW2Bme-Wp4EdU-omopnRVTM0Kh_2ovXR3ENIRhim--RcCnQsfP9f8migwgykrF2laBl9du7ZbjL_Bq3nG5IpWZq3eqnJqpnXBBzhOlJwkuRMe4hdwCAo&_=1766492912667);
+}
+
+.prog__itemTitle {
+  margin-bottom: min(.52vw, 10px);
+  font-size: min(1.56vw, 30px);
+  font-weight: 700;
+  line-height: 100%;
+  color: #000000;
+  letter-spacing: 0;
+  transition: color .3s ease-in-out;
+}
+
+.prog__itemDescr {
+  font-size: min(1.04vw, 20px);
+  font-weight: 400;
+  transition: color .3s ease-in-out;
+}
+
+.prog__itemDescr,
+.prog__topic {
+  font-style: normal;
+  line-height: normal;
+  color: #000000;
+  ;
+}
+
+.prog__topic {
+  width: -moz-max-content;
+  width:      max-content;
+  height: min(2.24vw, 43px);
+  padding: min(.52vw, 10px) min(1.56vw, 30px);
+  border-radius: min(1.56vw, 30px);
+  font-size: min(.94vw, 18px);
+  font-weight: 500;
+  background-color: #d9ff79;
+  ;
+}
+
+.active {
+  color: #ffffff;
+  background-color: #b91827;
+  ;
+}
+
+/* .prog__compItem:hover {
+    background-image: url(https://econom.mos.ru/mira/Do?doaction=DownloadFileWithStatisticField&fileId=604464&downloadFileId=tP62f3TmAS6ktmYV4AC0Eg&accessToken=sUtW3nQOcY-oMKgWgGN0YO4Bh5ls7YFrNjTqyprrsM8S1Qxv6-cucME94PPpUke_SIaTO1Ow9-ekHlZwJsm6yaHaNfqc_cDe1fmdMh1ZmTnf-9emcsfeDBfNoOYIRZDpCmK8vsnChKKF15emNmWgTLef3qYG04VGpihv2NieJIBE3PPGJSlvcc0538bwQYyFtrXMXJWeCIavgaTcR6s0CUitV2Npp_1Dr2VCkg_4I2iDFgqye8I5YQmkJQ3T0xqu-o_tagScS0ZooSjFEs8yO4OnoiTnj2Tdl1wYleVu66casr7d9sCI2-T8YumbcpdovMiUah-n2Uvbnho25wXfWHUC0BUsRVtvW4vsTalfMSfsS-5ekz5Y_O3FfAwyjd9AwFS_g4VPMtAA1uunqyge_dQ8diSe1GmIjdNzlXdKml0x6Ok5YkGRDtV2wgCoYXxXE1dL5lAn9_OLOW2Bme-Wp4EdU-omopnRVTM0Kh_2ovXR3ENIRhim--RcCnQsfP9f8migwgykrF2laBl9du7ZbjL_Bq3nG5IpWZq3eqnJqpnXBBzhOlJwkuRMe4hdwCAo&_=1766478532772)
+}
+
+.prog__compItem:hover .prog__itemDescr,
+.prog__compItem:hover .prog__itemTitle {
+    color: #fff
+} */
+
+.prog__compItem:hover:after {
+  color: #ffffff;
+  background-color: #000000;
+
+  rotate: -45deg;
+}
+
+.visible {
+  display: block;
+}
+
+.none {
+  display: none;
+}
+
+
+
+
+</style>
+<main>
+    <section class="hero">
+        <div class="container hero__container">
+            <div class="hero__main flex">
+                <h1>Программа лояльности</h1>
+                <p class="hero__descr">Способ поощрить активное участие сотрудников в жизни компании, предлагая
+                    бонусы и привилегии за вклад в общее дело</p>
+            </div>
+        </div>
+    </section>
+    <section class="prog">
+        <div class="container prog__container">
+            <ul class="prog__choiceLIst flex">
+                <li><button data-target="all" class="prog__choiceBtn active">Все</button></li>
+                <li><button data-target="development" class="prog__choiceBtn">Развитие</button></li>
+                <li><button data-target="sport" class="prog__choiceBtn">Спорт и фитнес</button></li>
+                <li><button data-target="leisure" class="prog__choiceBtn">Досуг</button></li>
+                <li><button data-target="health" class="prog__choiceBtn">Здоровье</button></li>
+            </ul>
+            <ul class="prog__compList flex">
+                <li class="prog__item development"><a class="prog__compItem flex" href="https://econom.mos.ru/mira/#&type=lerna">
+                        <div class="prog__itemIcon prog__itemIcon_lerna"></div>
+                        <div>
+                            <div class="prog__itemTitle">Скидка 80%</div>
+                            <p class="prog__itemDescr">Онлайн-обучение на единой платформе</p>
+                        </div><span class="prog__topic">#Развитие</span>
+                    </a></li>
+                <li class="prog__item development"><a class="prog__compItem flex" href="https://econom.mos.ru/mira/#&type=skyeng">
+                        <div class="prog__itemIcon prog__itemIcon_2"></div>
+                        <div>
+                            <div class="prog__itemTitle">Скидка до 30.000 ₽</div>
+                            <p class="prog__itemDescr">Курсы английского языка</p>
+                        </div><span class="prog__topic">#Развитие</span>
+                    </a></li>
+                <li class="prog__item development"><a class="prog__compItem flex" href="https://econom.mos.ru/mira/#&type=netologiya">
+                        <div class="prog__itemIcon prog__itemIcon_3"></div>
+                        <div>
+                            <div class="prog__itemTitle">Скидка 60%</div>
+                            <p class="prog__itemDescr">Курсы от одного из лидеров онлайн-образования в России</p>
+                        </div><span class="prog__topic">#Развитие</span>
+                    </a></li>
+                <li class="prog__item development"><a class="prog__compItem flex" href="https://econom.mos.ru/mira/#&type=wikium-loyalty">
+                        <div class="prog__itemIcon prog__itemIcon_4"></div>
+                        <div>
+                            <div class="prog__itemTitle">Скидка 30%</div>
+                            <p class="prog__itemDescr">Викиум - это зарядка для мозга, только он лучше, чем кофе</p>
+                        </div><span class="prog__topic">#Развитие</span>
+                    </a></li>
+                <li class="prog__item development"><a class="prog__compItem flex" href="https://econom.mos.ru/mira/#&type=yandex-praktikum">
+                        <div class="prog__itemIcon prog__itemIcon_5"></div>
+                        <div>
+                            <div class="prog__itemTitle">Скидка 18%</div>
+                            <p class="prog__itemDescr">Почти на все программы</p>
+                        </div><span class="prog__topic">#Развитие</span>
+                    </a>
+                </li>
+                <li class="prog__item development"><a class="prog__compItem flex" href="https://econom.mos.ru/mira/#&type=finkon">
+                    <div class="prog__itemIcon prog__itemIcon_6"></div>
+                    <div>
+                        <div class="prog__itemTitle">Скидка 15%</div>
+                        <p class="prog__itemDescr">Бизнес-обучение и повышение квалификации</p>
+                    </div><span class="prog__topic">#Развитие</span>
+                </a>
+                </li>
+                <li class="prog__item development"><a class="prog__compItem flex" href="https://econom.mos.ru/mira/#&type=profi">
+                    <div class="prog__itemIcon prog__itemIcon_7"></div>
+                    <div>
+                        <div class="prog__itemTitle">Скидка 10%</div>
+                        <p class="prog__itemDescr">Учебные программы</p>
+                    </div><span class="prog__topic">#Развитие</span>
+                </a>
+                </li>
+                <li class="prog__item development">
+                    <a class="prog__compItem flex" href="https://econom.mos.ru/mira/#&type=spetsialist">
+                    <div class="prog__itemIcon prog__itemIcon_8"></div>
+                    <div>
+                        <div class="prog__itemTitle">Скидка 5%</div>
+                        <p class="prog__itemDescr">Учебные программы</p>
+                    </div><span class="prog__topic">#Развитие</span>
+                </a>
+                </li>
+                <li class="prog__item development">
+                    <a class="prog__compItem flex" href="https://econom.mos.ru/mira/#&type=artskills">
+                    <div class="prog__itemIcon prog__itemIcon_9"></div>
+                    <div>
+                        <div class="prog__itemTitle">Скидка 10%</div>
+                        <p class="prog__itemDescr">На любой мастер-класс и абонемент в студии</p>
+                    </div><span class="prog__topic">#Развитие</span>
+                </a>
+                </li>
+                <li class="prog__item sport">
+                    <a class="prog__compItem flex" href="https://econom.mos.ru/mira/#&type=sssr">
+                        <div class="prog__itemIcon prog__iconLogo_1"></div>
+                        <div>
+                            <div class="prog__itemTitle">Корпоративные цены</div>
+                            <p class="prog__itemDescr">Абонементы в сети клубов по специальным условиям</p>
+                        </div><span class="prog__topic">#Спорт_и_фитнес</span>
+                    </a>
+                </li>
+                <li class="prog__item sport">
+                    <a class="prog__compItem flex" href="https://econom.mos.ru/mira/#&type=spiritfitness">
+                        <div class="prog__itemIcon prog__iconLogo_2"></div>
+                        <div>
+                            <div class="prog__itemTitle">Корпоративные цены</div>
+                            <p class="prog__itemDescr">Абонементы в сети клубов по специальным условиям</p>
+                        </div><span class="prog__topic">#Спорт_и_фитнес</span>
+                    </a>
+                </li>
+                <li class="prog__item sport">
+                    <a class="prog__compItem flex" href="https://econom.mos.ru/mira/#&type=alex-fitness">
+                        <div class="prog__itemIcon prog__iconLogo_3"></div>
+                        <div>
+                            <div class="prog__itemTitle">Корпоративные цены</div>
+                            <p class="prog__itemDescr">Абонементы в сети клубов по специальным условиям</p>
+                        </div><span class="prog__topic">#Спорт_и_фитнес</span>
+                    </a>
+                </li>
+                <li class="prog__item sport">
+                    <a class="prog__compItem flex" href="https://econom.mos.ru/mira/#&type=citysquash">
+                        <div class="prog__itemIcon prog__iconLogo_4"></div>
+                        <div>
+                            <div class="prog__itemTitle">Корпоративные цены</div>
+                            <p class="prog__itemDescr">Абонементы в сети клубов по специальным условиям</p>
+                        </div><span class="prog__topic">#Спорт_и_фитнес</span>
+                    </a>
+                </li>
+                <li class="prog__item sport">
+                    <a class="prog__compItem flex" href="https://econom.mos.ru/mira/#&type=worldclass">
+                        <div class="prog__itemIcon prog__iconLogo_5"></div>
+                        <div>
+                            <div class="prog__itemTitle">Корпоративные цены</div>
+                            <p class="prog__itemDescr">Абонементы в сети клубов по специальным условиям</p>
+                        </div><span class="prog__topic">#Спорт_и_фитнес</span>
+                    </a>
+                </li>
+                <li class="prog__item sport">
+                    <a class="prog__compItem flex" href="https://econom.mos.ru/mira/#&type=element">
+                        <div class="prog__itemIcon prog__iconLogo_6"></div>
+                        <div>
+                            <div class="prog__itemTitle">Скидка на билеты 30%</div>
+                            <p class="prog__itemDescr">На все спектакли</p>
+                        </div><span class="prog__topic">#Спорт_и_фитнес</span>
+                    </a>
+                </li>
+                <li class="prog__item sport">
+                    <a class="prog__compItem flex" href="https://econom.mos.ru/mira/#&type=Korpfit">
+                        <div class="prog__itemIcon prog__iconLogo_7"></div>
+                        <div>
+                            <div class="prog__itemTitle">Скидка на билеты 30%</div>
+                            <p class="prog__itemDescr">На все спектакли</p>
+                        </div><span class="prog__topic">#Спорт_и_фитнес</span>
+                    </a>
+                </li>
+                <li class="prog__item sport">
+                    <a class="prog__compItem flex" href="https://econom.mos.ru/mira/#&type=crocusfitness">
+                        <div class="prog__itemIcon prog__iconLogo_8"></div>
+                        <div>
+                            <div class="prog__itemTitle">Скидка на билеты 30%</div>
+                            <p class="prog__itemDescr">На все спектакли</p>
+                        </div><span class="prog__topic">#Спорт_и_фитнес</span>
+                    </a>
+                </li>
+                <li class="prog__item leisure">
+                    <a class="prog__compItem flex" href="https://econom.mos.ru/mira/#&type=theatre-ordynka">
+                        <div class="prog__itemIcon prog__iconLogo_9"></div>
+                        <div>
+                            <div class="prog__itemTitle">Скидка на билеты 30%</div>
+                            <p class="prog__itemDescr">На все спектакли</p>
+                        </div><span class="prog__topic">#Досуг_и_мероприятия</span>
+                    </a>
+                </li>
+                <li class="prog__item leisure">
+                    <a class="prog__compItem flex" href="https://econom.mos.ru/mira/#&type=theatre-shilovtsy">
+                        <div class="prog__itemIcon prog__iconLogo_10"></div>
+                        <div>
+                            <div class="prog__itemTitle">Скидка на билеты 30%</div>
+                            <p class="prog__itemDescr">На все спектакли</p>
+                        </div><span class="prog__topic">#Досуг_и_мероприятия</span>
+                    </a>
+                </li>
+                <li class="prog__item leisure">
+                    <a class="prog__compItem flex" href="https://econom.mos.ru/mira/#&type=theatre-art-platforma">
+                        <div class="prog__itemIcon prog__iconLogo_11"></div>
+                        <div>
+                            <div class="prog__itemTitle">Скидка 40%</div>
+                            <p class="prog__itemDescr">На спектакли «Милаха» и «Я люблю тебя папа!»</p>
+                        </div><span class="prog__topic">#Досуг_и_мероприятия</span>
+                    </a>
+                </li>
+                <li class="prog__item health">
+                    <a class="prog__compItem flex" href="https://econom.mos.ru/mira/#&type=VSK">
+                        <div class="prog__itemIcon prog__iconLogo_12"></div>
+                        <div>
+                            <div class="prog__itemTitle">Специальные условия</div>
+                            <p class="prog__itemDescr">На программы страхования ДМС</p>
+                        </div><span class="prog__topic">#Досуг_и_мероприятия</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+</main>
+<script>
+
+(function(){
+  let progChoiceBtn = document.querySelectorAll(".prog__choiceBtn")
+let progCompList = document.querySelectorAll('.prog__item')
+
+function progChoice() {
+    progChoiceBtn.forEach(e => {
+    let targetBlock = e.getAttribute('data-target')
+
+    e.addEventListener("click", ()=> {
+        progCompList.forEach(block => {
+            if (block.classList.contains(targetBlock)){
+                block.classList.add("visible");
+                block.classList.remove("none");
+            } else {
+                block.classList.remove("visible");
+                block.classList.add("none");
+            }
+            if(targetBlock === "all") {
+                block.classList.add("visible");
+                block.classList.remove("none");
+            }
+        })
+
+        for(let elem of progChoiceBtn) {
+            elem.classList.remove("active")
+        }
+        e.classList.add("active")
+    })
+
+})
+}
+
+progChoice()
+})()
+</script>

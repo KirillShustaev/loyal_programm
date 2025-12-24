@@ -1,0 +1,894 @@
+<!-- Подключаем стили: --><!-- <link href="Do?doaction=DownloadFileWithStatisticField&accessToken=sUtW3nQOcY-oMKgWgGN0YHAHaaepXJ79M4Y5FyaZv1cS1Qxv6-cucME94PPpUke_SIaTO1Ow9-ekHlZwJsm6yV1OsSUWbtmWTp2gXSLllS3t_nKu1h_HuIGhTL99eGb0PIGghzRl8Yp5HZ3jlXDqH3Cpzqog2dHeSS67SrZ1cejdOnN6mbmHofMMtJ1vuMl8j635xk3wnQ9Q9dSSIixGQqKDOPrKUJsDbUx0waD3I-2XQnhKGOd5AIdUP6avlRu-b2mKz4IIF4p0iaQ68EMuoNoa8mLJm0Htc97RnyXc_0jqsx_0JsiVT18WU-DcRQcDsTiCFHqwZDkw4W4EzksTY2kvTVe27fCNyStDBB2ov0SOkwPEqHn3kXyZyrFY-BSh2lyeFN4Jqi8I_IviyB_qhdY_zOS5_7HywTkUC8dIUCSeAXSaAdJEjiihd_Ec0l_RE8CW6_BnwHq3TN1Auk0q9tWXtOI6JTqfl7M5Dl9BjU5BKuqaVhybxGRCiDuEcz1C915Cq9oYrGYz035PsguCU03YHCuUVR6baAg70p_QExKCObFppkPwTGOnGLKOvhV07uvVF5ectd-QRZRdXtwG0T7uPtbzcS6_D4QuFq--IvfSQfDIX9j5GPhEnq0x5XkB06ZVnKTqyUj_qSlRgo5Nqmi4-y5UrtRHlkg1OGWnn2ispZf-32IqGmKux2naDFiM&fileId=580135" rel="stylesheet" /> -->
+<style data-scoped-style="" type="text/css">
+    * {
+        /*font-family: TTNorms;*/
+    }
+
+    body {
+        margin: 0px;
+        box-sizing: border-box;
+    }
+
+    .widget {
+        background: transparent;
+    }
+
+    :root {
+        --portal-osnovnye-bright-background: #edf1f1;
+        --portal-osnovnye-bright-white: #fff;
+        --portal-osnovnye-bright-blue: #2067d9;
+        --portal-osnovnye-bright-red: #c7151e;
+        --portal-osnovnye-bright-black: #141414;
+    }
+
+    .custom-html__reset-styles,
+    .custom__document-container {
+        font-size: 16px;
+        color: var(--portal-osnovnye-bright-black);
+        background-color: inherit;
+        padding-left: 100px !important;
+        padding-right: 100px !important;
+    }
+
+    .custom-html__reset-styles *,
+    .custom-footer__container * {
+        line-height: normal;
+        color: inherit;
+        box-sizing: border-box;
+    }
+
+    @media (min-width: 1921px) {
+        .custom-html__reset-styles {
+            font-size: 22px;
+        }
+    }
+
+    @media (max-width: 1600px) {
+        .custom-html__reset-styles {
+            font-size: 14px;
+        }
+    }
+
+    @media (max-width: 1440px) {
+        .custom-html__reset-styles {
+            font-size: 13px;
+        }
+    }
+
+    @media (max-width: 1280px) {
+        .custom-html__reset-styles {
+            font-size: 12px;
+        }
+    }
+
+    @media (max-width: 1024px) {
+        .custom-html__reset-styles {
+            font-size: 10px;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .custom-html__reset-styles {
+            font-size: 9px;
+        }
+    }
+
+    .custom-html__reset-styles ul,
+    .custom-html__reset-styles ol {
+        padding-inline-start: 1.25em;
+    }
+
+    .rt .bold {
+        font-weight: 700;
+    }
+
+    .rt .regular {
+        font-weight: 400;
+    }
+
+    .rt .italic {
+        font-style: italic;
+    }
+
+    .rt p,
+    .rt ul,
+    .rt ol,
+    .rt a {
+        margin: 0px;
+        font-size: 1.25em;
+        line-height: normal;
+    }
+
+    .rt ul,
+    .rt ol {
+        margin-left: -1.25em;
+    }
+
+    .rt h1 {
+        font-size: 6em;
+        font-weight: 700;
+        line-height: 1;
+    }
+
+    .rt h2 {
+        font-size: 3em;
+        font-weight: 700;
+        line-height: 1;
+    }
+
+    .rt h3 {
+        font-size: 2em;
+        font-weight: 700;
+        line-height: 1;
+    }
+
+    .rt h3 {
+        font-size: 1.5em;
+        font-weight: 700;
+        line-height: 1;
+    }
+
+    .program-loyality__section-title {
+        padding-top: 0.5em;
+        margin-bottom: 0.5em;
+        font-size: 3em;
+        font-weight: 700;
+    }
+
+    .rt .center {
+        text-align: center;
+    }
+
+    .rt .lowercase {
+        text-transform: lowercase;
+    }
+
+    .rt .uppercase {
+        text-transform: uppercase;
+    }
+
+    .hero {
+        margin-top: 0.75em;
+        padding: 2em;
+        margin-bottom: 0.75em;
+        min-height: 30em;
+        background: url(Publications/39445/Image/programm-loyality-banner.png) no-repeat right center / contain, var(--portal-osnovnye-bright-white);
+        border-radius: 1em;
+    }
+
+    .hero-content {
+        position: relative;
+        max-width: 40%;
+    }
+
+    .hero-content h1 {
+        margin: 0px 0px 20px;
+        color: var(--portal-osnovnye-bright-black);
+        font-size: 6em;
+        font-weight: 700;
+        line-height: 1;
+    }
+
+    .hero-content p {
+        margin: 0.5em 0px 0px;
+        color: var(--portal-osnovnye-bright-black);
+        font-size: 1.5em;
+    }
+
+    .hr-vote__menu-container {
+        margin-bottom: 2.5em;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        gap: 0.75em;
+    }
+
+    .hr-vote__menu-item {
+        padding: 0.65em 1em;
+        text-align: center;
+        font-size: 1.5em;
+        color: var(--portal-osnovnye-bright-black);
+        background-color: var(--portal-osnovnye-bright-white);
+        border-radius: 0.5em;
+        box-shadow: rgba(214, 214, 214, 0.25) 0px 4px 16.3px 0px;
+        transition: 0.2s ease-in;
+    }
+
+    .hr-vote__menu-item:hover,
+    .hr-vote__menu-item:active,
+    .hr-vote__menu-item:focus {
+        color: var(--portal-osnovnye-bright-white);
+        background-color: var(--portal-osnovnye-bright-blue);
+        transition: 0.2s ease-in;
+    }
+
+    .loyalty-container-heading {
+        padding-top: 0.5em;
+        margin-bottom: 0.5em;
+        font-size: 3em;
+        font-weight: 700;
+    }
+
+    .cards-wrapper {
+        margin-bottom: 2.5em;
+        overflow: hidden;
+        max-height: 25.75em;
+        transition: max-height 0.5s ease-in-out;
+    }
+
+    .cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1.5em;
+    }
+
+    .card-container {
+        position: relative;
+        height: 25em;
+    }
+
+    .card {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        display: block;
+        color: var(--portal-osnovnye-bright-black);
+        text-decoration: none;
+        overflow: hidden;
+        background: var(--portal-osnovnye-bright-white);
+        border-radius: 1em;
+        transition: 0.2s ease-in;
+    }
+
+    .card:hover,
+    .card:active,
+    .card:focus {
+        box-shadow: rgba(15, 28, 212, 0.06) 0px 3px 7px 0px;
+        transition: 0.2s ease-in;
+    }
+
+    .special-offer {
+        position: absolute;
+        top: 1.5em;
+        left: 1.5em;
+        right: 1.5em;
+        display: -webkit-box;
+        padding: 0.5em;
+        text-align: center;
+        color: var(--portal-osnovnye-bright-white);
+        overflow: hidden;
+        background: var(--portal-osnovnye-bright-red);
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+        border-radius: 1em;
+        z-index: 1;
+        transition: 0.2s ease-in;
+        font-size: 1.125em !important;
+    }
+
+    .card:hover .special-offer,
+    .card:active .special-offer,
+    .card:focus .special-offer {
+        color: var(--portal-osnovnye-bright-black);
+        background: var(--portal-osnovnye-bright-white);
+        transition: 0.2s ease-in;
+        font-size: 0.875em !important;
+    }
+
+    .partner-logo {
+        position: absolute;
+        top: calc(25% + 1.25em);
+        left: 50%;
+        display: block;
+        padding: 1.25em;
+        margin: 0px auto auto;
+        object-fit: contain;
+        object-position: center center;
+        height: 12em;
+        width: 16em;
+        max-width: 80%;
+        background-color: var(--portal-osnovnye-bright-white);
+        transform: translateX(-50%);
+        border-radius: 1em;
+        z-index: 1;
+        transition: 0.2s ease-in;
+    }
+
+    .card:hover .partner-logo,
+    .card:active .partner-logo,
+    .card:focus .partner-logo {
+        height: 6em;
+        transition: 0.2s ease-in;
+    }
+
+    .card-image {
+        position: relative;
+        left: 50%;
+        object-fit: cover;
+        object-position: center center;
+        width: auto;
+        height: 100%;
+        transform: translateX(-50%);
+        transition: 0.2s ease-in;
+    }
+
+    .card:hover .card-image,
+    .card:active .card-image,
+    .card:focus .card-image {
+        filter: opacity(0.5);
+        transition: 0.2s ease-in;
+    }
+
+    .card-info {
+        position: absolute;
+        left: -100%;
+        bottom: 0px;
+        background: var(--portal-osnovnye-bright-white);
+        width: 100%;
+        height: calc(25% + 1.25em);
+        border-bottom-left-radius: 1em;
+        border-bottom-right-radius: 1em;
+        padding: 1.5em;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        flex-flow: column;
+        -webkit-box-pack: justify;
+        justify-content: space-between;
+        transition: 0.2s ease-in;
+    }
+
+    .card:hover .card-info,
+    .card:active .card-info,
+    .card:focus .card-info {
+        left: 0px;
+        background-color: var(--portal-osnovnye-bright-blue);
+        color: var(--portal-osnovnye-bright-white);
+        transition: 0.2s ease-in;
+    }
+
+    .offer {
+        position: relative;
+        display: block;
+        margin: 0px 0px 0.75em;
+        color: inherit;
+        max-height: 2.25em;
+        overflow: hidden;
+        text-align: center;
+        text-overflow: ellipsis;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        font-size: 1.125em !important;
+    }
+
+    .promocode {
+        display: block;
+        position: relative;
+        font-size: 1.25em;
+        color: inherit;
+        text-align: center;
+    }
+
+    .promocode>span {
+        color: inherit;
+        font-weight: bold;
+    }
+
+    .rt .button {
+        padding: 0.75em;
+        display: block;
+        text-decoration: none;
+        font-size: 1.25em;
+        font-weight: 700;
+        width: 50%;
+        border-radius: 1em;
+        text-align: center;
+        margin: 0px auto;
+        cursor: pointer;
+        height: 100%;
+        transition: 0.2s ease-in;
+    }
+
+    .btn-black-outlined {
+        border: 1px solid var(--portal-osnovnye-bright-black);
+        background: var(--portal-osnovnye-bright-white);
+        color: var(--portal-osnovnye-bright-black);
+        transition: 0.2s ease-in;
+    }
+
+    .btn-black-outlined:hover {
+        background: var(--portal-osnovnye-bright-blue);
+        border-color: var(--portal-osnovnye-bright-blue);
+        color: var(--portal-osnovnye-bright-white);
+        cursor: pointer;
+        transition: 0.2s ease-in;
+    }
+
+    .rt-info-block {
+        display: block;
+        text-decoration: none;
+        width: auto;
+        margin-top: 2.5em !important;
+        margin-bottom: 2.5em !important;
+        font-size: 1.125em !important;
+    }
+
+    .rt-info-block a {
+        color: var(--portal-osnovnye-bright-red);
+        font-size: inherit;
+    }
+
+    .hidden {
+        display: none !important;
+    }
+
+    .mira-widget-pageheader.custom-html__widget-container {
+        border-radius: 1em;
+    }
+
+    .mira-bread-crumbs {
+        padding: 1.25em;
+    }
+
+    .mira-bread-crumbs-caption-title {
+        font-size: 1.5em;
+        font-weight: 700;
+        color: var(--portal-osnovnye-bright-black);
+    }
+
+    .rt-loyalty-program {
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        flex-flow: wrap;
+        -webkit-box-pack: justify;
+        justify-content: space-between;
+        gap: 2.5em;
+        padding-bottom: 3.75em;
+        margin-right: auto;
+        margin-bottom: 0px;
+        margin-left: auto;
+        margin-top: 1.25em !important;
+    }
+
+    .rt-header {
+        position: relative;
+        width: 100%;
+        min-height: 20em;
+        max-height: 30em;
+        overflow: hidden;
+        border-radius: 1em;
+    }
+
+    .rt-header img,
+    video {
+        width: 100%;
+        object-fit: contain;
+        display: inline-block;
+        border-radius: 1em;
+    }
+
+    .rt-info {
+        width: 60%;
+        min-width: 25em;
+        flex-grow: 2;
+    }
+
+    .rt-promo {
+        width: auto;
+        max-width: calc(40% - 2.5em);
+        border-left: 0.5em solid var(--portal-osnovnye-bright-red);
+        padding-left: 1.5em;
+    }
+
+    .rt-contact {
+        margin-top: 1.25em;
+    }
+
+    .rt-loyalty-program-header-logo {
+        position: absolute;
+        width: 10em;
+        height: 10em;
+        object-fit: contain;
+        object-position: center center;
+        bottom: 1.5em;
+        left: 1.5em;
+    }
+
+    .rt-loyalty-program-header-logo img {
+        position: absolute;
+        bottom: 0px;
+        padding: 1.25em;
+        max-width: 100%;
+        height: auto;
+        background-color: var(--portal-osnovnye-bright-white);
+    }
+
+    .rt-loyalty-program h1,
+    .rt-loyalty-program h2,
+    .rt-loyalty-program h3,
+    .rt-loyalty-program p {
+        margin: 0px;
+    }
+
+    .rt-loyalty-program p,
+    .rt-loyalty-program ul,
+    .rt-loyalty-program ol {
+        margin-bottom: 1.25em;
+        font-size: 1.25em;
+        line-height: normal;
+        text-align: left;
+    }
+
+    .rt-loyalty-program ul {
+        margin-top: -0.9em;
+        padding-left: 1.25em;
+        list-style: none !important;
+    }
+
+    .rt-loyalty-program ul li::before {
+        content: "•";
+        color: var(--portal-osnovnye-bright-red);
+        font-weight: 800;
+        display: inline-block;
+        width: 1em;
+        margin-left: -1em;
+    }
+
+    .rt-loyalty-program li>ul {
+        margin-top: auto;
+    }
+
+    .rt-loyalty-program h1 {
+        margin: 0px;
+        font-size: 2.5em;
+    }
+
+    .rt-loyalty-program h2 {
+        font-size: 2em;
+        margin-bottom: 0.75em;
+        text-transform: uppercase;
+    }
+
+    .rt-info h2:first-of-type,
+    .rt-promo h2:first-of-type {
+        margin-top: 0px;
+        padding-top: 0px;
+    }
+
+    .rt-loyalty-program h3 {
+        font-size: 1.5em;
+        font-weight: bold;
+    }
+
+    .rt-loyalty-program h4 {
+        font-size: 1.25em;
+        font-weight: bold;
+    }
+
+    .rt-loyalty-program a,
+    .rt-link {
+        color: var(--portal-osnovnye-bright-blue);
+        font-size: inherit;
+        line-height: inherit;
+        font-weight: 700;
+        text-decoration: none;
+    }
+
+    .rt-coupon {
+        display: inline-block;
+        padding: 0.75em 1.5em;
+        width: auto;
+        color: var(--portal-osnovnye-bright-black);
+        font-size: 1.25em;
+        font-weight: bold;
+        text-align: center;
+        border: 0.025em dashed var(--portal-osnovnye-bright-blue);
+        border-radius: 3em;
+        margin: 0px 0px 1.25em !important;
+    }
+
+    .rt-button {
+        display: block;
+        padding: 0.75em 1.5em;
+        margin-bottom: 1.25em;
+        height: auto;
+        width: fit-content;
+        font-size: 1.25em;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-align: center;
+        text-decoration: none;
+        background-color: var(--portal-osnovnye-bright-red);
+        border-radius: 3em;
+        border: 0.25em solid var(--portal-osnovnye-bright-red);
+        transition: 0.3s ease-in-out;
+        color: var(--portal-osnovnye-bright-white) !important;
+    }
+
+    .rt-button:hover,
+    .rt-button:active,
+    .rt-button:focus {
+        border: 0.25em solid var(--portal-osnovnye-bright-blue);
+        background-color: var(--portal-osnovnye-bright-blue);
+        transition: 0.3s ease-in-out;
+    }
+
+    .rt-red {
+        color: var(--portal-osnovnye-bright-red);
+    }
+</style>
+<!-- Скрипт раскрытия списка: -->
+<script type="text/javascript">
+    function expandContainer(containerName) {
+        if ($('#' + containerName + '-button').html() == 'Показать все предложения') {
+            $('div#' + containerName + '-container').css('max-height', $('div#' + containerName).height());
+            $('#' + containerName + '-button').html('Свернуть предложения');
+            console.log('Changed height of ' + containerName + ' container to ' + $('div#' + containerName).height() + 'px');
+        } else {
+            $('div#' + containerName + '-container').css('max-height', $('div.card-container').height());
+            $('#' + containerName + '-button').html('Показать все предложения');
+            console.log('Changed height of ' + containerName + ' container to ' + $('div.card-container').height() + 'px');
+        };
+    }
+</script><!-- Скрипт скрытия якорей в адресной строке  -->
+<script>
+    document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+
+            document.querySelector(this.getAttribute("href")).scrollIntoView({
+                behavior: "smooth",
+            });
+        });
+    });
+</script><!-- Hero -->
+<div class="custom-html__reset-styles">
+    <section class="rt hero">
+        <div class="hero-content">
+            <h1>Программа лояльности</h1>
+            <p>Способ поощрить активное участие сотрудников в жизни компании, предлагая бонусы и привилегии за вклад в
+                общее дело</p>
+        </div>
+    </section><!-- Hero -->
+</div>
+<div class="custom-html__reset-styles hr-vote__menu-container" style="grid-template-columns: 1fr 1fr 1fr 1fr;"><a
+        class="hr-vote__menu-item" href="#courses">Развитие</a> <a class="hr-vote__menu-item" href="#fitness">Спорт и
+        фитнес</a> <a class="hr-vote__menu-item" href="#discounts">Досуг</a> <a class="hr-vote__menu-item"
+        href="#health">Здоровье</a></div><!-- External courses -->
+<section class="custom-html__reset-styles rt loyalty-programs"><a name="courses"></a>
+    <h2 class="loyalty-container-heading">Дополнительное развитие</h2>
+    <div class="cards-wrapper" id="courses-container">
+        <div class="cards" id="courses"><!-- Partner card -->
+            <div class="card-container"><a class="card" href="/#&type=lerna">
+                    <p class="special-offer">Cкидки до 80%</p> <img class="partner-logo"
+                        src="Publications/39445/Image/Lerna_logo_correct.png" /> <img class="card-image"
+                        src="Publications/39445/Image/lerna-background-2025.png" />
+                    <div class="card-info">
+                        <p class="offer">Онлайн-обучение на единой платформе &laquo;Lerna&raquo;</p>
+                        <!-- <p class="promocode">Через активацию партенского аккаунта</p> -->
+                    </div>
+                </a></div><!-- End of card --><!-- Partner card -->
+            <div class="card-container"><a class="card" href="/#&amp;type=skyeng">
+                    <p class="special-offer">Скидка до 30000 рублей</p> <img class="partner-logo"
+                        src="Publications/21555/Image/skyeng-logotype.png" /> <img class="card-image"
+                        src="Publications/21555/Image/skyeng-bg.jpg" />
+                    <div class="card-info">
+                        <p class="offer">Курсы английского языка от &laquo;Skyeng&raquo;</p>
+                    </div>
+                </a></div><!-- End of card --><!-- Partner card -->
+            <div class="card-container"><a class="card" href="/#&amp;type=netologiya">
+                    <p class="special-offer">Скидка 60% на все онлайн курсы</p> <img class="partner-logo"
+                        src="Publications/21555/Image/netologiya-logotype.png" /> <img class="card-image"
+                        src="Publications/21555/Image/netologiya-bg.jpeg" />
+                    <div class="card-info">
+                        <p class="offer">Курсы от одного из лидеров онлайн-образования в России</p>
+                        <!-- <p class="promocode">Промокод: <span>«NETO-MSC60»</span></p> -->
+                    </div>
+                </a></div><!-- End of card --><!-- Partner card -->
+            <div class="card-container"><a class="card" href="/#&amp;type=wikium-loyalty">
+                    <p class="special-offer">Скидка 30%</p> <img class="partner-logo"
+                        src="Publications/21555/Image/wikium-logotype.png" /> <img class="card-image"
+                        src="Publications/39445/Image/vikium-background-2025.svg" />
+                    <div class="card-info">
+                        <p class="offer">Викиум &mdash; это зарядка для мозга, только он лучше, чем кофе</p>
+                        <!-- <p class="promocode">Промокод: <span>«wikium30»</span></p> -->
+                    </div>
+                </a></div><!-- End of card --><!-- Partner card -->
+            <div class="card-container"><a class="card" href="/#&amp;type=yandex-praktikum">
+                    <p class="special-offer">Скидка 18%</p> <img class="partner-logo"
+                        src="Publications/39445/Image/yandex-praktikum-logo.png" /> <img class="card-image"
+                        src="Publications/39445/Image/yandex-praktikum.png" />
+                    <div class="card-info">
+                        <p class="offer">На почти все программы &laquo;Яндекс-Практикум&raquo;</p>
+                        <!-- <p class="promocode">Промокод: <span>«B2BCRSV_18»</span></p> -->
+                    </div>
+                </a></div><!-- End of card --><!-- Partner card -->
+            <div class="card-container"><a class="card" href="/#&amp;type=finkon">
+                    <p class="special-offer">Скидка 15%</p> <img class="partner-logo"
+                        src="Publications/21555/Image/fincont-logotype.png" /> <img class="card-image"
+                        src="Publications/39445//Image/fincont-background-2025.jpg" />
+                    <div class="card-info">
+                        <p class="offer">Бизнес-обучение и повышение квалификации</p>
+                        <!-- <p class="promocode">Промокод: <span>«ГОА15»</span></p> -->
+                    </div>
+                </a></div><!-- End of card --><!-- Partner card -->
+            <div class="card-container"><a class="card" href="/#&amp;type=profi">
+                    <p class="special-offer">Скидка 10%</p> <img class="partner-logo"
+                        src="Publications/21555/Image/proficareer-logotype.png" /> <img class="card-image"
+                        src="Publications/21555/Image/proficareer-bg-1.jpg" />
+                    <div class="card-info">
+                        <p class="offer">Учебные программы &laquo;Профи карьера&raquo;</p>
+                        <!-- <p class="promocode">Промокод: <span>«MOS10»</span></p> -->
+                    </div>
+                </a></div><!-- End of card --><!-- Partner card -->
+            <div class="card-container"><a class="card" href="/#&amp;type=spetsialist">
+                    <p class="special-offer">Скидка 5%</p> <img class="partner-logo"
+                        src="Publications/21555/Image/specialist-ru-logotype.png" /> <img class="card-image"
+                        src="Publications/21555/Image/specialist-ru-bg.jpg" />
+                    <div class="card-info">
+                        <p class="offer">Учебные программы &laquo;Специалист.ru&raquo;</p>
+                        <!-- <p class="promocode">Промокод: <span>«GoMsc»</span></p> -->
+                    </div>
+                </a></div><!-- End of card --><!-- Partner card -->
+            <div class="card-container"><a class="card" href="/#&amp;type=artskills">
+                    <p class="special-offer">Скидка 10%</p> <img class="partner-logo"
+                        src="Publications/39445/Image/Artskills-logo.png" /> <img class="card-image"
+                        src="Publications/39445/Image/Artskills.jpg" />
+                    <div class="card-info">
+                        <p class="offer">На любой мастер класс и абонемент в студии</p>
+                        <!-- <p class="promocode">Промокод: <span>«ТЕХНОПОЛИС»</span></p> -->
+                    </div>
+                </a></div><!-- End of card -->
+        </div>
+    </div>
+    <p class="rt button btn-black-outlined" container="courses" id="courses-button"
+        onclick="expandContainer($(this).attr('container'))">Показать все предложения</p>
+</section><!-- External courses --><!-- fitnes -->
+<section class="custom-html__reset-styles rt loyalty-programs"><a name="fitness"></a>
+    <h2 class="loyalty-container-heading">Спорт и фитнес</h2>
+    <div class="cards-wrapper" id="fitness-container">
+        <div class="cards" id="fitness"><!-- Partner card -->
+            <div class="card-container"><a class="card" href="/#&amp;type=sssr">
+                    <p class="special-offer">Корпоративные цены</p> <img class="partner-logo"
+                        src="Publications/21555/Image/sssr-logotype.png" /> <img class="card-image"
+                        src="Publications/21555/Image/sssr-bg.jpg" />
+                    <div class="card-info">
+                        <p class="offer">Абонементы в сети клубов &laquo;С.С.С.Р.&raquo;</p>
+                    </div>
+                </a></div><!-- End of card --><!-- Partner card -->
+            <div class="card-container"><a class="card" href="/#&amp;type=spiritfitness">
+                    <p class="special-offer">Корпоративные цены</p> <img class="partner-logo"
+                        src="Publications/21555/Image/spiritfitness-logotype.png" /> <img class="card-image"
+                        src="Publications/21555/Image/spiritfitness-bg.jpg" />
+                    <div class="card-info">
+                        <p class="offer">Абонементы в сети клубов &laquo;Spirit. Fitness&raquo;</p>
+                    </div>
+                </a></div><!-- End of card --><!-- Partner card -->
+            <div class="card-container"><a class="card" href="/#&amp;type=alex-fitness">
+                    <p class="special-offer">Корпоративные цены</p> <img class="partner-logo"
+                        src="Publications/21555/Image/alex-fitness-logo-black.png" /> <img class="card-image"
+                        src="Publications/21555/Image/alex-fitness-background.jpg" />
+                    <div class="card-info">
+                        <p class="offer">Абонементы в клубах &laquo;Alex Fitness&raquo; и &laquo;A-Fitness&raquo;</p>
+                    </div>
+                </a></div><!-- End of card --><!-- Partner card -->
+            <div class="card-container"><a class="card" href="/#&amp;type=citysquash">
+                    <p class="special-offer">Специальные цены</p> <img class="partner-logo"
+                        src="Publications/39445/Image/squash_logo.png" /> <img class="card-image"
+                        src="Publications/39445/Image/squash.jpg" />
+                    <div class="card-info">
+                        <p class="offer">Игры в сквош-клубах &laquo;City squash&raquo;</p>
+                        <!-- <p class="promocode">Промокод: <span>«Правительство Москвы»</span></p> -->
+                    </div>
+                </a></div><!-- End of card --><!-- Partner card -->
+            <div class="card-container"><a class="card" href="/#&amp;type=worldclass">
+                    <p class="special-offer">Корпоративные цены</p> <img class="partner-logo"
+                        src="Publications/21555/Image/worldclass-logotype.png" /> <img class="card-image"
+                        src="Publications/21555/Image/worldclass-bg.jpg" />
+                    <div class="card-info">
+                        <p class="offer">Абонементы в сети клубов &laquo;World Class&raquo;</p>
+                    </div>
+                </a></div><!-- End of card --><!-- Partner card -->
+            <div class="card-container"><a class="card" href="/#&amp;type=element">
+                    <p class="special-offer">Корпоративные цены</p> <img class="partner-logo"
+                        src="Publications/21555/Image/5element-logotype.png" /> <img class="card-image"
+                        src="Publications/21555/Image/5element-bg.jpg" />
+                    <div class="card-info">
+                        <p class="offer">Абонементы в сети клубов &laquo;5ELEMENT&raquo;</p>
+                    </div>
+                </a></div><!-- End of card --><!-- Partner card -->
+            <div class="card-container"><a class="card" href="/#&amp;type=Korpfit">
+                    <p class="special-offer">Корпоративные цены</p> <img class="partner-logo"
+                        src="Publications/21555/Image/xfit-logotype.png" /> <img class="card-image"
+                        src="Publications/21555/Image/xfit-bg.jpg" />
+                    <div class="card-info">
+                        <p class="offer">Абонементы в сети клубов &laquo;X-FIT&raquo;</p>
+                    </div>
+                </a></div><!-- End of card --><!-- Partner card -->
+            <div class="card-container"><a class="card" href="/#&amp;type=crocusfitness">
+                    <p class="special-offer">Корпоративные цены</p> <img class="partner-logo"
+                        src="Publications/21555/Image/crocusfitness-logotype.png" /> <img class="card-image"
+                        src="Publications/21555/Image/crocusfitness-bg.jpg" />
+                    <div class="card-info">
+                        <p class="offer">Абонементы в сети клубов &laquo;Crocus Fitness&raquo;</p>
+                    </div>
+                </a></div><!-- End of card -->
+        </div>
+    </div>
+    <p class="rt button btn-black-outlined" container="fitness" id="fitness-button"
+        onclick="expandContainer($(this).attr('container'))">Показать все предложения</p>
+    <p class="rt-info-block">С 2022 года появилась возможность получить денежную компенсацию за занятие спортом с
+        помощью налогового вычета.<br />
+        Подробная информация на портале <a
+            href="https://www.mos.ru/otvet-dengi/kak-poluchit-nalogovyy-vychet-po-rashodam-na-fitnes/#5">mos.ru</a></p>
+</section>
+<section class="custom-html__reset-styles rt loyalty-programs"><a name="discounts"></a>
+    <h2 class="loyalty-container-heading">Досуг и мероприятия</h2>
+    <div class="cards-wrapper" id="discounts-container">
+        <div class="cards" id="discounts"><!-- Partner card -->
+            <div class="card-container"><a class="card" href="/#&amp;type=theatre-ordynka">
+                    <p class="special-offer">Скидка на билеты 30%</p> <img class="partner-logo"
+                        src="Publications/39445/Image/theatre-ordynka-logo.png" /> <img class="card-image"
+                        src="Publications/39445/Image/theatre-ordynka-podlogka.jpg" />
+                    <div class="card-info">
+                        <p class="offer">На все спектакли</p>
+                        <!-- <p class="promocode">Промокод: <span>«sredateatr»</span></p> -->
+                    </div>
+                </a></div><!-- End of card --><!-- Partner card -->
+            <div class="card-container"><a class="card" href="/#&amp;type=theatre-shilovtsy">
+                    <p class="special-offer">Скидка на билеты 30%</p> <img class="partner-logo"
+                        src="Publications/39445/Image/theatre-shilovtsy-logo.png" /> <img class="card-image"
+                        src="Publications/39445/Image/theatre-shilovtsy-podlogka.jpg" />
+                    <div class="card-info">
+                        <p class="offer">На все спектакли</p>
+                        <!-- <p class="promocode">Промокод: <span>«sredateatr»</span></p> -->
+                    </div>
+                </a></div><!-- End of card --><!-- Partner card -->
+            <div class="card-container"><a class="card" href="/#&amp;type=theatre-art-platforma">
+                    <p class="special-offer">Скидка 40%</p> <img class="partner-logo"
+                        src="Publications/39445/Image/theatre-art-platforma-logo.png" /> <img class="card-image"
+                        src="Publications/39445/Image/theatre-art-platforma-podlogka-fon.jpg" />
+                    <div class="card-info">
+                        <p class="offer">На cпектакли &laquo;Милаха&raquo; и &laquo;Я люблю тебя, папа!&raquo;</p>
+                        <!-- <p class="promocode">Промокод: <span>«sredateatr»</span></p> -->
+                    </div>
+                </a></div><!-- End of card -->
+        </div>
+    </div> <!-- <p class="rt button btn-black-outlined" container="discounts" id="discounts-button"
+        onclick="expandContainer($(this).attr('container'))">Показать все предложения</p> -->
+</section><!-- Discounts --><!-- External health -->
+<section class="custom-html__reset-styles rt loyalty-programs"><a name="health"></a>
+    <h2 class="loyalty-container-heading">Здоровье</h2>
+    <div class="cards-wrapper" id="health-container">
+        <div class="cards" id="health"><!-- Partner card -->
+            <div class="card-container"><a class="card" href="/#&amp;type=VSK">
+                    <p class="special-offer">Специальные условия</p> <img class="partner-logo"
+                        src="Publications/72704/Image/DMS logo Energogarant.jpeg" /> <img class="card-image"
+                        src="Publications/21555/Image/sogaz-bg.jpg" />
+                    <div class="card-info">
+                        <p class="offer">На программы страхования ДМС от <span>&laquo;Энергогарант&raquo;</span></p>
+                    </div>
+                </a></div><!-- End of card --><!-- Partner card --><!-- <div class="card-container"><a class="card" href="/#&type=sogaz">
+                        <p class="special-offer">Индивидуальные условия</p> <img class="partner-logo"
+                            src="Publications/21555/Image/sogaz-logotype.png" /> <img class="card-image"
+                            src="Publications/21555/Image/sogaz-bg.jpg" />
+                        <div class="card-info">
+                            <p class="offer">На программы страхования<span>«Согаз»</span></p>
+
+                        </div>
+                    </a></div> --><!-- End of card -->
+        </div>
+    </div><!-- <p class="rt button btn-black-outlined" container="health" id="health-button"
+onclick="expandContainer($(this).attr('container'))">Показать все предложения</p> -->
+</section><!-- Uslugi -->
+<div class="custom-html__reset-styles rt-info-block">
+    <h3>Дополнительная информация</h3>
+    <p>Ответственность АНО &laquo;Среда возможностей&raquo; ограничивается размещением на&nbsp;корпоративном портале
+        предложений от&nbsp;поставщиков товаров/работ/услуг. Все претензии к&nbsp;соответствующим
+        товарам/работам/услугам, в&nbsp;том числе в&nbsp;отношении качества товаров/работ/услуг и&nbsp;сроков исполнения
+        обязательств, предъявляются непосредственно поставщикам.</p>
+</div>

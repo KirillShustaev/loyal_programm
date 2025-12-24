@@ -22,8 +22,6 @@ function progChoice() {
             }
         })
 
-
-
         for(let elem of progChoiceBtn) {
             elem.classList.remove("active")
         }
